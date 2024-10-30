@@ -27,6 +27,8 @@ li a:hover {
 /*GitHub*/
 
 /*Activity*/
+
+
 .main {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
@@ -34,7 +36,9 @@ li a:hover {
     padding: 0;
     background-color: #f9eec4;
 }
+/**
 
+// Vi må kalle disse noe annet for å spesifisere at det kun gjelder Activity siden
 header {
     background-color: #1abc9c;
     color: #fff;
@@ -64,7 +68,7 @@ nav a:hover {
     background-color: #1abc9c;
     border-radius: 5px;
 }
-
+**/
 .container {
     display: grid;
     grid-template-columns: 1fr;
