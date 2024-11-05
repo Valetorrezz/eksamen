@@ -41,16 +41,26 @@ header{
     text-decoration: underline;
 }
 
-.studieoppbygging{
-    background-color: #333;
+.studieoppbygging-container{
     display: flex;
-    height: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 5px;
 }
-.studieoppbygging > div{
-    background-color: wheat;
-    width: 100px;
-    margin: 10px;
+.emne{
+    width: 150px;
+    height: 150px;
+    color: white;
+    text-align: start;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px;
 }
+#emne1, #emne2, #emne3, #emne4, #emne5, #emne6, #emne7, #emne8{
+    background-color: blue;
+}
+
+
 /*
 .home {
     hvis noen ønsker å gjøre endring på body kun på hjemmesiden (index.html)
