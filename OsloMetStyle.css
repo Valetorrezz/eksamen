@@ -29,6 +29,27 @@ li a:hover {
     padding: 0;
     background-color: #f9eec4;
 }
+
+.mahder1 {
+    max-width: 600px;
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+.mahder1 h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.mahder1 ul li{
+    list-style-type: disc;
+    background-color: black;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
 /*Accessibility*/
 
 /*GitHub*/
