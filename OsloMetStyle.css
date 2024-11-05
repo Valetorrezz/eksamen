@@ -22,6 +22,60 @@ li a:hover {
     background-color: #fff28e;
   }
 
+  
+  .AriSinDel {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.AriSinDel h2 {
+    font-size: 24px;
+    color: #333;
+}
+.AriSinDel p {
+    font-size: 16px;
+    color: #666;
+}
+.AriSinDel-course-leader {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.AriSinDel-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.AriSinDel-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.AriSinDel-profile-info h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+.AriSinDel-profile-info p {
+    margin: 5px 0;
+    color: #666;
+}
+.AriSinDel-profile-info a {
+    color: #1abc9c;
+    text-decoration: none;
+}
+.AriSinDel-profile-info a:hover {
+    text-decoration: underline;
+}
 /*Accessibility*/
 
 /*GitHub*/
