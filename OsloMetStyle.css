@@ -45,13 +45,7 @@ middle.left p {
 .overskrift4{
     margin-top: 0;
 }
-.background-continer{
-    background-color: #333;
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 /*Accessibility*/
 
 /*GitHub*/
