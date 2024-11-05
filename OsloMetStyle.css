@@ -28,13 +28,7 @@ li a:hover {
     padding: 0;
     background-color: #ffffff;
 }
-.background-continer{
-    background-color: #333;
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .content-box{
     background-color: #e0f7ff;
     border-radius: 10px;
@@ -51,7 +45,13 @@ middle.left p {
 .overskrift4{
     margin-top: 0;
 }
-
+.background-continer{
+    background-color: #333;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*Accessibility*/
 
 /*GitHub*/
