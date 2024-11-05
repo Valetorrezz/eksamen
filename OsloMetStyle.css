@@ -28,13 +28,22 @@ li a:hover {
     padding: 0;
     background-color: #ffffff;
 }
+.background-continer{
+    background-color: #333;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .content-box{
     background-color: #e0f7ff;
     border-radius: 10px;
     padding: 20px;
+    max-width: 600px;
     width: 40%;
-    margin-left: 0;
+    margin-left: 15%;
     margin-top: 20px;
+    box-sizing: border-box;
 }
 middle.left p {
     margin: 10px 0;
