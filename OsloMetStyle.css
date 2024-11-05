@@ -21,19 +21,21 @@ li a {
 li a:hover {
     background-color: #fff28e;
   }
+  .main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
 
 /*Accessibility*/
 
 /*GitHub*/
 
 /*Activity*/
-.main {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    background-color: #f9eec4;
-}
+
 
 header {
     background-color: #1abc9c;
