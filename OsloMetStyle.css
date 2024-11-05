@@ -1,4 +1,14 @@
 /*Index.html*/
+body{
+    margin:0px;
+    background-color: #ecdd8e;
+}
+main{
+    margin: 20px;
+}
+header{
+    background-color: #c0a729;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -26,7 +36,7 @@ li a:hover {
 
 /*GitHub*/
 
-/*Activity*/
+/*Activity
 .main {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
