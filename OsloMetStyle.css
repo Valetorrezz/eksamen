@@ -4,7 +4,6 @@ ul {
     margin: 0;
     padding: 13px;
     overflow: hidden;
-    background-color: #efd035;
 }
 li {
     float: left;
@@ -29,12 +28,22 @@ li a:hover {
     padding: 0;
     background-color: #f9eec4;
 }
-
-.mahder1 {
-    max-width: 600px;
+.wrapper {
+    display:flex;
+    max-width: 1200px;
+    margin: 0 auto;
     background-color: black;
     padding: 20px;
+}
+
+.mahder1, .side-content {
+    flex: 1;
+    padding: 20px;
     color: white;
+}
+
+.mahder1 {
+    border-right: 2px solid white;
 }
 
 .mahder1 h1 {
@@ -43,12 +52,37 @@ li a:hover {
     color: white;
 }
 
-.mahder1 ul li{
+.mahder1 p {
+    color:white;
+    margin-bottom: 20px;
+}
+.mahder1 ul { 
     list-style-type: disc;
-    background-color: black;
     padding-left: 20px;
-    margin-bottom: 10px;
     color: white;
+}
+
+
+
+.side-content {
+    flex: 1;
+    background-color: black;
+    padding: 20px;
+    color: white;
+}
+
+.side-content h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    color: white;
+}
+
+.side-content p {
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    list-style-type: disc;
 }
 /*Accessibility*/
 
