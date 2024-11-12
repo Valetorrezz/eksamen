@@ -26,54 +26,53 @@ li a:hover {
   .AriSinDel {
     text-align: center;
     padding: 20px;
-    background-color: #fff;
+    background-color: #67d1f4;
     margin: 20px auto;
     max-width: 600px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(58, 157, 238, 0.1);
 }
 .AriSinDel h2 {
     font-size: 24px;
-    color: #333;
+    color: black;
 }
 .AriSinDel p {
     font-size: 16px;
-    color: #666;
+    color: black;
 }
-.AriSinDel-course-leader {
+.AriSinDel-kursleder {
     display: flex;
     align-items: center;
     margin-top: 20px;
     padding: 20px;
-    background-color: #f1f1f1;
+    background-color: rgb(241, 246, 248);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.AriSinDel-profile {
+.AriSinDel-profil {
     display: flex;
     align-items: center;
     gap: 15px;
 }
-.AriSinDel-profile img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.AriSinDel-profil img {
+    width: 130px;
+    height: 170px;
+    box-shadow: 0 4px 8px rgb(138, 149, 245);
 }
-.AriSinDel-profile-info h3 {
+.AriSinDel-profil-info h3 {
     margin: 0;
     font-size: 20px;
-    color: #333;
+    color: #070202;
 }
-.AriSinDel-profile-info p {
+.AriSinDel-profil-info p {
     margin: 5px 0;
-    color: #666;
+    color: #0a0a0c;
 }
-.AriSinDel-profile-info a {
-    color: #1abc9c;
+.AriSinDel-profil-info a {
+    color: #060606;
     text-decoration: none;
 }
-.AriSinDel-profile-info a:hover {
+.AriSinDel-profil-info a:hover {
     text-decoration: underline;
 }
 /*Accessibility*/
