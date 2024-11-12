@@ -59,7 +59,7 @@ header{
     font-size: 16px;
     color: #666;
 }
-.AriSinDel-course-leader {
+.AriSinDel-kursleder {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,7 +85,7 @@ header{
     color: #060606;
     text-decoration: none;
 }
-.AriSinDel-profile-info a:hover {
+.AriSinDel-profil-info a:hover {
     text-decoration: underline;
 }
 /*Accessibility*/
