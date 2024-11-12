@@ -97,14 +97,14 @@ li a:hover {
     background-color: #f9eec4;
 }
 
-header {
+/*header {
     background-color: #1abc9c;
     color: #fff;
     padding: 20px;
     text-align: center;
     font-size: 24px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+}*/
 
 nav {
     display: flex;
