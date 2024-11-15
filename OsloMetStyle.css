@@ -125,8 +125,32 @@ header{
 .text3 { 
     margin-top: 0; 
 }
+/*Valentina sin del slutt*/
 
 /*Mahder sin del*/
+.wrapper {
+    display:flex;
+    max-width: auto;
+    background-color: rgb(41, 41, 41);
+    padding: 20px; 
+    margin-top: 20px;
+}
+
+.mahder1, .side-content {
+    flex: 1;
+    padding: 20px;
+    color: white;
+}
+
+.mahder1 {
+    border-right: 2px solid white;
+}
+
+.mahder1 h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: white;
+}
 .mahder1 p {
     color:white;
     margin-bottom: 20px;
@@ -137,77 +161,28 @@ header{
     color: white;
 }
 
-
-
 .side-content {
     flex: 1;
-    background-color: rgb(20, 20, 20);
-}
-
-
-/*Nederste delen*/
-  .AriSinDel {
-    text-align: center;
+    background-color: rgb(41, 41, 41);
     padding: 20px;
-    background-color: #ffffffeb;
-    margin: 20px auto;
-    max-width: 600px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(58, 157, 238, 0.1);
-  }
-  
-  .AriSinDel h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
     color: white;
 }
 
-.side-content {
-    flex: 1;
-    background-color: rgb(20, 20, 20);
-    padding: 20px;
-    background-color: rgb(241, 246, 248);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .AriSinDel-profil {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-  
-  .AriSinDel-profil img {
-    width: 130px;
-    height: 170px;
-    box-shadow: 0 4px 8px rgb(138, 149, 245);
-  }
-  
-  .AriSinDel-profil-info h3 {
-    margin: 0;
-    font-size: 20px;
-    color: #070202;
-  }
-  
-  .AriSinDel-profil-info p {
-    margin: 5px 0;
-    color: #0a0a0c;
-  }
-  
-  .AriSinDel-profil-info a {
-    color: #060606;
-    text-decoration: none;
-  }
-  
-  .AriSinDel-profil-info a:hover {
-    text-decoration: underline;
-  }
+.side-content h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    color: white;
+}
 
-  
-    
-    
-    
-    
+.side-content p {
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    list-style-type: disc;
+}
+/*Mahder sin del slutt*/
+
 
 .studieoppbygging-container{
     display: grid;
@@ -298,6 +273,7 @@ header{
   .AriSinDel-profil-info a:hover {
     text-decoration: underline;
   }
+  /*Ari sin del slutt*/
 
 
 
@@ -318,6 +294,7 @@ header{
     border-radius: 10px; /* Avrundede kanter */ 
     cursor: pointer; /*muse tasen blir gjort over til en hånd når den blir plassert over*/
   }
+  /*slutt på footer for hovedsiden*/
 
 
   
@@ -337,14 +314,6 @@ header{
     padding: 0;
     background-color: #ffffff;
 }
-
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #16a085;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}*/
 
 .nav-A ul{ /*navigation bar*/
     list-style-type: none;
