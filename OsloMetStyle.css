@@ -63,7 +63,7 @@ header{
     background-color: #c1e7ff;
     margin: 20px auto;
     max-width: auto;
-    border-radius: 8px;
+    border-radius: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 /* Styles for the placement of the small-box conatiners */
@@ -408,10 +408,10 @@ repository.*/
     padding: 10px 20px; 
     font-size: 16px; 
     color: rgb(179, 177, 177); 
-    background-color: #e8e8e8; /* Grunnfarge for knappen */ 
+    background-color: #e8e8e8; 
     border: 2px solid rgb(197, 196, 196); 
-    border-radius: 10px; /* Avrundede kanter */ 
-    cursor: pointer; /*muse tasen blir gjort over til en hånd når den blir plassert over*/
+    border-radius: 10px; 
+    cursor: pointer; 
 }
 
 /* Styles for search button */
@@ -419,10 +419,10 @@ repository.*/
     padding: 10px 20px; 
     font-size: 16px; 
     color: rgb(0, 0, 0); 
-    background-color: #daf0e6; /* Grunnfarge for knappen */ 
+    background-color: #daf0e6; 
     border: 2px solid rgb(168, 196, 173); 
-    border-radius: 10px; /* Avrundede kanter */ 
-    cursor: pointer; /*muse tasen blir gjort over til en hånd når den blir plassert over*/
+    border-radius: 10px; 
+    cursor: pointer; 
 }
 
 /*Style for the second conatainer, headline section */
@@ -446,10 +446,10 @@ repository.*/
     padding: 10px 20px; 
     font-size: 16px; 
     color: rgb(0, 0, 0); 
-    background-color: #b6e1b8; /* Grunnfarge for knappen */ 
+    background-color: #b6e1b8; 
     border: none; 
-    border-radius: 10px; /* Avrundede kanter */ 
-    cursor: pointer; /*muse tasen blir gjort over til en hånd når den blir plassert over*/
+    border-radius: 10px; 
+    cursor: pointer; 
     transition: background-color 0.3s;
 }
 
@@ -487,10 +487,10 @@ img {
     padding: 10px 20px; 
     font-size: 13px; 
     color: rgb(0, 0, 0); 
-    background-color: #dae9da; /* Grunnfarge for knappen */ 
+    background-color: #dae9da; 
     border: none; 
-    border-radius: 10px; /* Avrundede kanter */ 
-    cursor: pointer; /*muse tasen blir gjort over til en hånd når den blir plassert over*/
+    border-radius: 10px; 
+    cursor: pointer;
 }
 
 /* Placement of boxes */
@@ -519,7 +519,7 @@ img {
     text-align: center; 
     padding: 20px 0; 
     max-width: auto;
-    position: static; /*dosn't move*/
+    position: static; /*don't move*/
     margin: 0;
 }
 
