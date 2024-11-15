@@ -1,89 +1,233 @@
 /*Index.html*/
-ul {
+body{
+    margin:0px;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+main{
+    /* Sentrer alt innhold til midten og i rekkefølge nedover*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px; /* Sets a max width for main content */
+    margin: 0 auto;    /* Centers the main content horizontally */
+    padding: 20px;     /* Adds some inner padding */
+
+}
+header{
+    background-color: #c0a729;
+}
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 13px;
-    overflow: hidden;
+    background-color: #446494;
+    display: flex;
 }
-li {
-    float: left;
-  }
+
   
-li a {
+.navbar a {
     display: block;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
+    transition: background-color 0.3s ease;
+    margin: 0 15px;
+    padding: 5px 10px;
+}
   
 li a:hover {
     background-color: #fff28e;
-  }
+}
+.navbar a:hover {
+    background-color: #6090d4;
+    border-radius: 5px;
+    text-decoration: underline;
+}
 
-.main {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
+section.headline { 
+    padding-top: 5em;
+    padding-bottom: 5em;
+    text-align: center;
+    padding-right: 25%;
+    padding-left: 25%;
+    background-color: #c1e7ff;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container {
+    display: grid; 
+    grid-template-columns: repeat(2, auto); 
+    gap: 20px; /* Avstand mellom boksene */
+    width: fit-content; /* Tilpass containerens bredde */ 
+    margin: 0 auto; /*sentrer boksene i midten*/
+}
+
+.box1 {
+    width: 150px;
+    height: 60px;
+    background-color: #4c82af;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
-    background-color: #f9eec4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.wrapper {
-    display:flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: black;
+
+.overskrift2 {
+    text-align: center;
+}
+
+.box {
+    background-color: #c1e7ff;
     padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.content { 
+    padding-top: 5em; 
+    padding-bottom: 5em; 
+    background-color: #c1e7ff; 
 }
 
-.mahder1, .side-content {
-    flex: 1;
+.content-wrapper { 
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: center; 
+    gap: 20px; /* Juster avstanden mellom bilde og tekst */ 
+}
+
+.image-logo img { 
+    max-width: 70%; /* Tilpasser bildet til containeren */ 
+    height: auto; 
+    box-shadow: none; /* Fjerner skyggen */
+}
+
+.text-container { 
+    text-align: left; /* Venstrejuster teksten */ 
+    max-width: 50%; /* Juster bredden etter behov */ 
+} 
+
+.overskrift3 { 
+    text-align: center; 
+}
+.text3 { 
+    margin-top: 0; 
+}
+
+
+
+/*Nederste delen*/
+  .AriSinDel {
+    text-align: center;
     padding: 20px;
-    color: white;
-}
-
-.mahder1 {
-    border-right: 2px solid white;
-}
-
-.mahder1 h1 {
+    background-color: #ffffffeb;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(58, 157, 238, 0.1);
+  }
+  
+  .AriSinDel h2 {
     font-size: 24px;
-    margin-bottom: 15px;
-    color: white;
-}
-
-.mahder1 p {
-    color:white;
-    margin-bottom: 20px;
-}
-.mahder1 ul { 
-    list-style-type: disc;
-    padding-left: 20px;
-    color: white;
-}
-
-
-
-.side-content {
-    flex: 1;
-    background-color: black;
+    color: black;
+  }
+  
+  .AriSinDel p {
+    font-size: 16px;
+    color: black;
+  }
+  
+  .AriSinDel-kursleder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
     padding: 20px;
-    color: white;
+    background-color: rgb(241, 246, 248);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .AriSinDel-profil {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .AriSinDel-profil img {
+    width: 130px;
+    height: 170px;
+    box-shadow: 0 4px 8px rgb(138, 149, 245);
+  }
+  
+  .AriSinDel-profil-info h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #070202;
+  }
+  
+  .AriSinDel-profil-info p {
+    margin: 5px 0;
+    color: #0a0a0c;
+  }
+  
+  .AriSinDel-profil-info a {
+    color: #060606;
+    text-decoration: none;
+  }
+  
+  .AriSinDel-profil-info a:hover {
+    text-decoration: underline;
+  }
+
+  
+    
+    
+    
+    
+
+.studieoppbygging-container{
+    display: grid;
+    border-radius: 40px;
+    background-color: gray;
+    width: 100%;
+    height: 500px;
+    gap: 10px;
+    padding: 25px;
+    /*chatgpt*/
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.side-content h1 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    margin-left: 15px;
-    color: white;
+.studie-header{
+    display: flex;
+    background-color: rgb(180, 180, 180);
+    border-radius: 40px;
+    text-align: end;
 }
 
-.side-content p {
-    color: white;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    list-style-type: disc;
+.emne{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 40px;
+    text-align: center;
 }
+
+/*
+.home {
+    hvis noen ønsker å gjøre endring på body kun på hjemmesiden (index.html)
+}
+*/
+
 /*Accessibility*/
 
 /*GitHub*/
@@ -94,7 +238,7 @@ li a:hover {
     color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f9eec4;
+    background-color: #ffffff;
 }
 
 /*header {
@@ -106,49 +250,108 @@ li a:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }*/
 
-nav {
+.nav-A ul{ /*navigation bar*/
+    list-style-type: none;
+    margin: 0;
+    padding: 13px;
+    background-color: #699874;
     display: flex;
-    justify-content: center;
-    background-color: #16a085;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-nav a {
-    color: #fff;
-    margin: 0 15px;
+.nav-A a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    padding: 5px 10px;
     transition: background-color 0.3s ease;
+    margin: 0 15px;
+    padding: 5px 10px;
+  }
+
+.nav-A li a:hover { /*endrer på fargen bak teksten i navigeringsbaren*/
+    background-color: #a7c8ae;
+    text-decoration: underline;
 }
 
-nav a:hover {
-    background-color: #1abc9c;
-    border-radius: 5px;
+.main-A {
+    background-color: #f9f9f9;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
+.headline-A {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    background-color: #ffffff;
 }
 
-.activity-heading {
-    color: #1abc9c;
-    font-size: 32px;
+.overskrift-A {
+    color: #000000;
+    font-size: 50px;
     text-align: center;
     margin-bottom: 10px;
 }
 
-.undertekst {
+.undertekst-A {
     color: #16a085;
     font-size: 24px;
     text-align: center;
     margin-bottom: 20px;
 }
+
+.search-bar {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    color: rgb(179, 177, 177); 
+    background-color: #e8e8e8; /* Grunnfarge for knappen */ 
+    border: 2px solid rgb(197, 196, 196); 
+    border-radius: 10px; /* Avrundede kanter */ 
+    cursor: pointer; /*muse tasen blir gjort over til en hånd når den blir plassert over*/
+}
+
+.search {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    color: rgb(0, 0, 0); 
+    background-color: #daf0e6; /* Grunnfarge for knappen */ 
+    border: 2px solid rgb(168, 196, 173); 
+    border-radius: 10px; /* Avrundede kanter */ 
+    cursor: pointer; /*muse tasen blir gjort over til en hånd når den blir plassert over*/
+}
+
+.headline2-A {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-left: 25%;
+    padding-right: 25%;
+    background-color: #daf0e6;
+}
+
+.overskrift2-A {
+    font-size: 40px;
+    color: #131111;
+    text-align: center;
+}
+
+.button {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    color: rgb(0, 0, 0); 
+    background-color: #b6e1b8; /* Grunnfarge for knappen */ 
+    border: none; 
+    border-radius: 10px; /* Avrundede kanter */ 
+    cursor: pointer; /*muse tasen blir gjort over til en hånd når den blir plassert over*/
+    transition: background-color 0.3s;
+}
+
+.overskrift3-A {
+    font-size: 40px;
+    text-align: center;
+}
+
 
 h2 {
     color: #333;
@@ -161,6 +364,7 @@ p {
     line-height: 1.6;
 }
 
+
 a {
     color: #1abc9c;
     text-decoration: none;
@@ -169,7 +373,6 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
 img {
     display: block;
     max-width: 100%;
@@ -178,6 +381,35 @@ img {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.button1 {
+    padding: 10px 20px; 
+    font-size: 13px; 
+    color: rgb(0, 0, 0); 
+    background-color: #dae9da; /* Grunnfarge for knappen */ 
+    border: none; 
+    border-radius: 10px; /* Avrundede kanter */ 
+    cursor: pointer; /*muse tasen blir gjort over til en hånd når den blir plassert over*/
+}
+
+
+.container { /*plassering på boksene*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    display: grid;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.section { /*design på selve boksene*/
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 
 footer {
     background-color: #16a085;
@@ -191,19 +423,6 @@ footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Grid layout for content */
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.section {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
 
 
