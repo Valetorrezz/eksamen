@@ -1,4 +1,5 @@
 /*Index.html*/
+/* Body Styles: Sets default margin, background color, font, and text color */
 body{
     margin:0px;
     background-color: #ffffff;
@@ -7,15 +8,18 @@ body{
     margin: 0;
     padding: 0;
 }
-
+/* Main Container: Adds margin around main content */
 main{
     margin: 20px;
 }
 
 /*Navigationbar*/
+/* Color for the header */
 header{
     background-color: #446494;
 }
+
+/* Styles for the navigation bar list */
 .navbar ul {
     list-style-type: none;
     margin: 0;
@@ -25,29 +29,31 @@ header{
     align-items: center;
 }
 
+/* Styles for navigation bar links */
 .navbar a {
     display: block;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
     margin: 0 15px;
     padding: 5px 10px;
 }
-  
+
+/* Hover effect for navigation bar links */
   .navbar a:hover {
     background-color: #6090d4;
     border-radius: 5px;
     text-decoration: underline;
   }
 
+  /*Style to get rid of the shadow behind the picture*/
   .logo {
     box-shadow: none;
   }
 
-  /*Første delen Valentina sin del*/
-
+  /*Valentina's part*/
+/* Styles for the headline section, the first light-blue container */
   section.headline { 
     padding-top: 5em;
     padding-bottom: 5em;
@@ -56,19 +62,19 @@ header{
     padding-left: 25%;
     background-color: #c1e7ff;
     margin: 20px auto;
-    max-width: 600px;
+    max-width: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-.grid-container {
+/* Styles for the placement of the small-box conatiners */
+.small-box-container {
     display: grid; 
     grid-template-columns: repeat(2, auto); 
-    gap: 20px; /* Avstand mellom boksene */
-    width: fit-content; /* Tilpass containerens bredde */ 
-    margin: 0 auto; /*sentrer boksene i midten*/
+    gap: 20px; /* Space between boxes */
+    width: fit-content; /* Adjust container width */
+    margin: 0 auto; /* Center boxes */
 }
-
+/*Styles for the buttom boxes*/
 .box1 {
     width: 150px;
     height: 60px;
@@ -82,11 +88,12 @@ header{
     padding: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
+/*Style for the second heading*/
 .overskrift2 {
     text-align: center;
 }
 
+/* Styles for all the light-blue boxes */
 .box {
     background-color: #c1e7ff;
     padding: 20px;
@@ -94,40 +101,41 @@ header{
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+/*Styles for setting a background and a container on the content section*/
 .content { 
     padding-top: 5em; 
-    padding-bottom: 5em; 
+    padding-bottom: 5em;
     background-color: #c1e7ff; 
 }
-
-
+/*Style for alignin the text and pictures beside each other*/
 .content-wrapper { 
     display: flex; 
     align-items: flex-start; 
     justify-content: center; 
-    gap: 20px; /* Juster avstanden mellom bilde og tekst */ 
+    gap: 20px; //* Adjusts space between image and text */
 }
-
+/*Style for image*/
 .image-logo img { 
-    max-width: 70%; /* Tilpasser bildet til containeren */ 
+    max-width: 70%; /* Adjust image size to container */
     height: auto; 
-    box-shadow: none; /* Fjerner skyggen */
+    box-shadow: none;
 }
 
+/*Style for text*/
 .text-container { 
-    text-align: left; /* Venstrejuster teksten */ 
-    max-width: 50%; /* Juster bredden etter behov */ 
+    text-align: left; /* Left-aligns text */
+    max-width: 50%; /* Adjust width as needed */
 } 
 
+/*Centers heading 3*/
 .overskrift3 { 
     text-align: center; 
 }
-.text3 { 
-    margin-top: 0; 
-}
-/*Valentina sin del slutt*/
 
-/*Mahder sin del*/
+/*Valentina's part ends*/
+
+/*Mahder's part 1*/
 .wrapper {
     display:flex;
     max-width: auto;
@@ -181,7 +189,7 @@ header{
     margin-left: 20px;
     list-style-type: disc;
 }
-/*Mahder sin del slutt*/
+/*Mahder's part ends*/
 
 
 .studieoppbygging-container{
@@ -210,7 +218,7 @@ header{
     text-align: center;
 }
 
-/*Nederste delen Ari*/
+/*Ari's part*/
 .AriSinDel {
     text-align: center;
     padding: 20px;
@@ -273,11 +281,11 @@ header{
   .AriSinDel-profil-info a:hover {
     text-decoration: underline;
   }
-  /*Ari sin del slutt*/
+  /*Ari's part ends*/
 
 
 
-  /*Footer for hovedside*/
+  /*Footer for home-page*/
   .footer-Hovedside {
     background-color: #c1e7ff;
     text-align: center;
@@ -285,16 +293,16 @@ header{
     padding-bottom: 3em;
   }
 
-  .footer-b { /*classen for å lage knappen*/
-    padding: 10px 20px; 
-    font-size: 16px; 
-    color: rgb(0, 0, 0); /*farge på tekst*/
-    background-color: #608ba3; /* Grunnfarge for knappen */ 
-    border: none; /*kanten på knappen*/
-    border-radius: 10px; /* Avrundede kanter */ 
-    cursor: pointer; /*muse tasen blir gjort over til en hånd når den blir plassert over*/
+  .footer-b { /*Button class*/
+    padding: 10px 20px; /* Padding around the button text */
+    font-size: 16px; /* Font size of the button text */
+    color: rgb(0, 0, 0); 
+    background-color: #608ba3; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; /* Changes cursor to a hand when hovering over the button */
   }
-  /*slutt på footer for hovedsiden*/
+  /*end for home-page footer*/
 
 
   
@@ -303,8 +311,31 @@ header{
     
 
 /*Accessibility*/
+/*Short presentation of accessibility for your site. Test your site with an automated test. Write a very short text
+(between 400 and 500 words) about the coding choices you made for universal design beyond what an
+automated test could tell you. You are recommended to use screenshots from the testing site and of your code.
+When using automated tests, you still have a responsibility to check the code manually as well. Errors/ non-
+compliance may appear even if the automated test gives an All clear-verdict*/
+
+
+
+
 
 /*GitHub*/
+/*Include four images, two showing part of commits history, and two showing a specific change. See examples
+below. Write a short text (at least 200 words), split in paragraphs with sub-headings about collaboration in
+repositories like GitHub. Include
+• EITHER a short list of benefits of Git, GitHub, OR LiveShare in VS Code;
+• OR a short list of issues you had setting up Git-connection in VS Code, OR using GitHub
+Left: An example of a Commits history. Names redacted. Right: An example of a specific change in a Commit.
+The best collaborative use of Git happens when everyone commits incremental changes, and this is what we
+want documented, if possible. Both examples above indicate frequent and small changes committed to a shared
+repository.*/
+
+
+
+
+
 
 /*Activity*/
 /*The classes that "shares" the same name as an other class used on the other pages, have an -A at the end that indecades to Activity.*/
@@ -316,8 +347,9 @@ header{
     background-color: #ffffff;
 }
 
-.nav-A ul{ /*navigation bar,"nav-A" because it has a different color than the main navbar*/
-    list-style-type: none;
+/*navigation bar,"nav-A" because it has a different color than the main navbar*/
+.nav-A ul{ 
+    list-style-type: none; /* Remove bullet points from list */
     margin: 0;
     padding: 13px;
     background-color: #699874;
@@ -325,26 +357,27 @@ header{
 }
 
 .nav-A a {
-    display: block;
+    display: block; /* Display links as block elements */
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
+    text-decoration: none; /* Remove underline from links */
     transition: background-color 0.3s ease;
     margin: 0 15px;
     padding: 5px 10px;
   }
 
-.nav-A li a:hover { /*endrer på fargen bak teksten i navigeringsbaren*/
+/* Change background color on hover and Underline text on hover */
+.nav-A li a:hover { 
     background-color: #a7c8ae;
     text-decoration: underline;
 }
-
-.main-A { /*bakgrunne og tekst fonten på siden*/
+/* Background and text font for the page */
+.main-A { 
     background-color: #f9f9f9;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+/* Styles for headline section in the activity page, makes a white container around the content*/
 .headline-A {
     padding-top: 5em;
     padding-bottom: 5em;
@@ -354,6 +387,7 @@ header{
     background-color: #ffffff;
 }
 
+/* Styles for first headline title */
 .overskrift-A {
     color: #000000;
     font-size: 50px;
@@ -361,6 +395,7 @@ header{
     margin-bottom: 10px;
 }
 
+/* Styles for subtitle */
 .undertekst-A {
     color: #16a085;
     font-size: 24px;
@@ -368,6 +403,7 @@ header{
     margin-bottom: 20px;
 }
 
+/* Styles for the gray search bar */
 .search-bar {
     padding: 10px 20px; 
     font-size: 16px; 
@@ -378,6 +414,7 @@ header{
     cursor: pointer; /*muse tasen blir gjort over til en hånd når den blir plassert over*/
 }
 
+/* Styles for search button */
 .search {
     padding: 10px 20px; 
     font-size: 16px; 
@@ -388,6 +425,7 @@ header{
     cursor: pointer; /*muse tasen blir gjort over til en hånd når den blir plassert over*/
 }
 
+/*Style for the second conatainer, headline section */
 .headline2-A {
     padding-top: 5em;
     padding-bottom: 5em;
@@ -396,12 +434,14 @@ header{
     background-color: #daf0e6;
 }
 
+/*Style for second headline title*/
 .overskrift2-A {
     font-size: 40px;
     color: #131111;
     text-align: center;
 }
 
+/*Style for buttons inside headline2-A container*/
 .button {
     padding: 10px 20px; 
     font-size: 16px; 
@@ -413,32 +453,26 @@ header{
     transition: background-color 0.3s;
 }
 
+/*Style for 3. headline title*/
 .overskrift3-A {
     font-size: 40px;
     text-align: center;
 }
 
-
+/*Subtitle*/
 h2 {
     color: #333;
     font-size: 28px;
     margin-top: 20px;
 }
 
+/*Paragraph*/
 p {
     font-size: 18px;
     line-height: 1.6;
 }
 
-
-a {
-    color: #1abc9c;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
+/*Style for images*/
 img {
     display: block;
     max-width: 100%;
@@ -448,6 +482,7 @@ img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/*Styles for the green buttons underneith all pictures*/
 .button1 {
     padding: 10px 20px; 
     font-size: 13px; 
@@ -458,8 +493,8 @@ img {
     cursor: pointer; /*muse tasen blir gjort over til en hånd når den blir plassert over*/
 }
 
-
-.container { /*plassering på boksene*/
+/* Placement of boxes */
+.container { 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
@@ -469,7 +504,8 @@ img {
     padding: 20px;
 }
 
-.section { /*design på selve boksene*/
+/* Design of the boxes */
+.section { 
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -483,7 +519,7 @@ img {
     text-align: center; 
     padding: 20px 0; 
     max-width: auto;
-    position: static;
+    position: static; /*dosn't move*/
     margin: 0;
 }
 
