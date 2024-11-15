@@ -285,7 +285,7 @@ header{
     padding-bottom: 3em;
   }
 
-  .footer-b {
+  .footer-b { /*classen for å lage knappen*/
     padding: 10px 20px; 
     font-size: 16px; 
     color: rgb(0, 0, 0); /*farge på tekst*/
@@ -307,6 +307,7 @@ header{
 /*GitHub*/
 
 /*Activity*/
+/*The classes that "shares" the same name as an other class used on the other pages, have an -A at the end that indecades to Activity.*/
 .main {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
@@ -315,7 +316,7 @@ header{
     background-color: #ffffff;
 }
 
-.nav-A ul{ /*navigation bar*/
+.nav-A ul{ /*navigation bar,"nav-A" because it has a different color than the main navbar*/
     list-style-type: none;
     margin: 0;
     padding: 13px;
@@ -339,7 +340,7 @@ header{
     text-decoration: underline;
 }
 
-.main-A {
+.main-A { /*bakgrunne og tekst fonten på siden*/
     background-color: #f9f9f9;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -477,15 +478,13 @@ img {
 
 /*Footer for activity*/
 .Activity {
-    background-color: #16a085;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    font-size: 14px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #16a085; 
+    color: white; 
+    text-align: center; 
+    padding: 20px 0; 
+    max-width: auto;
+    position: static;
+    margin: 0;
 }
 
 
