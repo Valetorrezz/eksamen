@@ -193,13 +193,16 @@ header{
 
 
 /* mia's part */
+.miaspart {
+    align-content: center;
+}
+
 .firstbox, .secondbox  {
     background-color: #e0f7ff;
     width: 400px;
     padding: 30px;
     margin: 50px;
     border-radius: 20px;
-    
 }
 
 .firstbox {
