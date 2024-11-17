@@ -192,31 +192,45 @@ header{
 /*Mahder's part ends*/
 
 
-.studieoppbygging-container{
-    display: grid;
-    border-radius: 40px;
-    background-color: gray;
-    width: 100%;
-    height: 500px;
-    gap: 10px;
-    padding: 25px;
-    /*chatgpt*/
-    grid-template-columns: repeat(3, 1fr);
+/* mia's part */
+.firstbox, .secondbox  {
+    background-color: #e0f7ff;
+    width: 400px;
+    padding: 30px;
+    margin: 50px;
+    border-radius: 20px;
+    
 }
 
-.studie-header{
-    display: flex;
-    background-color: rgb(180, 180, 180);
-    border-radius: 40px;
-    text-align: end;
+.firstbox {
+    float: left;
+    margin-bottom: 40px;
 }
 
-.emne{
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    border-radius: 40px;
-    text-align: center;
+.secondbox {
+    float: right;
+    margin-top: 54px;
+    margin-right: 90px;
 }
+
+.itjobb {
+    float: right;
+    min-width: 56%;
+    min-height: 56%;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.exchangestudent {
+    float: left;
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 20px;
+    margin-top: 22px;
+    margin-left: 90px;
+}
+/* mia's part ends */
 
 /*Ari's part*/
 .AriSinDel {
