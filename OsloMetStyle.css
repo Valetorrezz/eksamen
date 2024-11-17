@@ -29,20 +29,42 @@ li a:hover {
     background-color: #ffffff;
 }
 
-.content-box{
+.firstbox, .secondbox  {
     background-color: #e0f7ff;
-    border-radius: 10px;
-    padding: 20px;
-    width: 40%;
-    margin-left: 15%;
-    margin-top: 20px;
+    width: 400px;
+    padding: 30px;
+    margin: 50px;
+    border-radius: 20px;
+    
+}
 
+.firstbox {
+    float: left;
+    margin-bottom: 40px;
 }
-middle.left p {
-    margin: 10px 0;
+
+.secondbox {
+    float: right;
+    margin-top: 54px;
+    margin-right: 90px;
 }
-.overskrift4{
-    margin-top: 0;
+
+.itjobb {
+    float: right;
+    min-width: 56%;
+    min-height: 56%;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.exchangestudent {
+    float: left;
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 20px;
+    margin-top: 22px;
+    margin-left: 90px;
 }
 
 /*Accessibility*/
