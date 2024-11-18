@@ -35,7 +35,6 @@
       </section>
       
       <h2 class="overskrift2"> Nøkkelinformasjon </h1>
-      
       <section class="container">
       <p class="box"><b>Studiested</b> <br> Pilestredet i Oslo </p>
       <p class="box"><b>Studiestart</b><br>August</p>
@@ -46,8 +45,8 @@
       </section>
 
       <section class="content"> 
-        <div class="content-wrapper"> <!--bruker Flexbox for å plassere bilde og tekst ved siden av hverandre.-->
-          <div class="text-container"> 
+        <article class="content-wrapper"> <!--bruker Flexbox for å plassere bilde og tekst ved siden av hverandre.-->
+          <article class="text-container"> 
             <h2 class="overskrift3">Hva lærer du?</h1>
             <p class="left">Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk, informatikk, fysikk og statistikk.  
           
@@ -58,15 +57,15 @@
               Det siste semesteret skriver du en bacheloroppgave tett knyttet til problemstillinger i arbeidslivet.
               
               Første året velger du hvilken av disse spesialiseringene du vil ta.</p>
-          </div>
-          <div class="image-logo"> <!--holder teksten og sørger for at den er venstrejustert.--> 
+            </article>
+          <article class="image-logo"> <!--holder teksten og sørger for at den er venstrejustert.--> 
             <img src="OsloMet.png" alt="Logo"> 
-          </div>
-        </div>
+          </article>
+        </article>
       </section>
       
-      <div class="wrapper">
-        <div class="mahder1">
+      <section class="wrapper">
+        <article class="mahder1">
           <h1 class="firstTitle">Hvordan foregår undervisningen?</h1>
           <p>Undervisningen er en kombinasjon av</p>
           <ul>
@@ -83,17 +82,14 @@
           <p>For å gjennomføre studiet på normert tid, må du regne med å bruke om lag 
             40 timer per uke på studierelatert arbeid gjennom hele semester.
           </p>
-        </div>
-    
-
-
-        <div class="side-content">
+        </article>
+        <section class="side-content">
           <h1>Hva koster det?</h1> <br>
           <p> Du betaler en semesteravgift hvert semester (student.oslomet.no).<a href="https://student.oslomet.no/semesteravgift" style="text-decoration: underline;"> Les mer...</a></p>
           <p>Er du internasjonal student fra utenfor EU og EØS, må du betale studieavgift (student.oslomet.no). <a href="https://student.oslomet.no/studieavgift-for-internasjonale-studenter-utenfor-eu-eos" style="text-decoration: underline;"> (Les mer). </a> Det er mulig 
             å søke om unntak for betaling av denne studieavgiften.</p>
-       </div>
-      </div>
+        </section>
+      </section>
 
       <!-- mia sin del -->
        <section class="miaspart">
@@ -118,7 +114,6 @@
           Datadrevne metoder og maskinlæring er i dag svært mye
           brukt i arbeidslivet. 
         </p>
-       
       </article>
     </section>
 
@@ -130,33 +125,46 @@
           </p>
           <h class="2headlinesecondpage" style="font-size: 25px;">Videre studiemuligheter ved Oslomet</h2>
           <p class="2boxtext2" style="font-size: 16px;">Anvendt data-informasjonsteknologi (ACIT), Les mer <a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">her.</a></p>
-          
       </article>
       <img class="exchangestudent" src="utveksling.jpeg" alt="Bilde av globus og bøker">
       </section>
     <!-- mia's part ends-->
-        
 
-    <div class="AriSinDel">
+    <!--Valentina's part: Studenthistorier-->
+    <section class="studenthistorier"> 
+      <article class="content-wrapper"> <!--bruker Flexbox for å plassere bilde og tekst ved siden av hverandre.-->
+        <article class="text-container"> 
+          <h2 class="overskrift4">Studenthistorier</h2>
+          <p class="left"><b>Spå fremtiden med matematikk og datavitenskap </b><br> Har du lyst til å finne ut av hva som skal skje i fremtiden? Lær å bruk verktøy for å forutsi alt fra været og strømpriser til utviklingen av boligmarkedet.</p>
+          <a href="https://www.oslomet.no/studier/studenthistorier" class="student-button">Flere studenthistorier</a>
+          </article>
+        <article class="image-spå"> <!--holder teksten og sørger for at den er venstrejustert.--> 
+          <img src="spå.jpg" alt="Logo"> 
+        </article>
+      </article>
+    </section>
+
+    <section class="AriSinDel">
     <h2>Spørsmål om utdanningen?</h2>
     <p>Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema.</p>
-    <div class="AriSinDel-kursleder">
-      <div class="AriSinDel-profil">
+    <article class="AriSinDel-kursleder">
+      <article class="AriSinDel-profil">
           <img src="Skjermbilde 2024-11-08 kl. 15.19.06.png" alt="Profilbilde av kursleder">
-          <div class="AriSinDel-profil-info">
+          <article class="AriSinDel-profil-info">
+            <h2>Faglig leder</h2>
               <h3>Kristoffer Herland Hellton </h3>
               <p>Kursleder</p>
               <p>+47 672 37 240</p>
               <p><a href="mailto:kristoffer.hellton@oslomet.no">kristoffer.hellton@oslomet.no</a></p>
-          </div>
-      </div>
-    </div>
-    </div>
+          </article>
+      </article>
+    </article>
+    </section>
 
     <footer class="footer-Hovedside">
       <h2 class="footer-h">Hold deg oppdatert på hva som skjer på OsloMet.</h2>
+      <button class="footer-b"><b>Abonner på vårt nyhetsbrev!</b></button>
       <p class="footer-p">Oslo Metropolitan University <br>Storbyuniversitet<br>Postboks 4, St. Olavs plass<br>0130 Oslo<br>Tlf.: 67 23 50 00<br>Kontakt oss</p>
-      <button class="footer-b"><b>Abonner på vårt nyhetsbrev!</button>
     </footer>
     
     </body>

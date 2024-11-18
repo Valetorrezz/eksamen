@@ -52,7 +52,7 @@ header{
     box-shadow: none;
   }
 
-  /*Valentina's part*/
+  /*Valentina's part: Style for "Matematisk modellering", "Nøkkeltall", "Hva lærer du?" sections*/
 /* Styles for the headline section, the first light-blue container */
   section.headline { 
     padding-top: 5em;
@@ -66,6 +66,12 @@ header{
     border-radius: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/*Headline size*/
+.text1{
+    font-size: 45px;
+}
+
 /* Styles for the placement of the small-box conatiners */
 .small-box-container {
     display: grid; 
@@ -117,8 +123,8 @@ header{
 }
 /*Style for image*/
 .image-logo img { 
-    max-width: 70%; /* Adjust image size to container */
-    height: auto; 
+    position: relative; 
+    left: 20px;
     box-shadow: none;
 }
 
@@ -132,10 +138,9 @@ header{
 .overskrift3 { 
     text-align: center; 
 }
-
 /*Valentina's part ends*/
 
-/*Mahder's part 1*/
+/*Mahder's part 1: Style for the "Hvordan foregår undervisning" and "Hva koster det" section*/
 .wrapper {
     display:flex;
     max-width: auto;
@@ -192,7 +197,7 @@ header{
 /*Mahder's part ends*/
 
 
-/* mia's part */
+/* mia's part: Style for "Hva kan du jobbe som?" , "Videre studiemuligheter" and "Utveksling" section*/
 .miaspart {
     align-content: center;
 }
@@ -235,7 +240,47 @@ header{
 }
 /* mia's part ends */
 
-/*Ari's part*/
+/*Valentina's part: Style for "Studenthistorier*/  
+.studenthistorier{
+    padding-top: 5em;
+    padding-bottom: 5em;
+    text-align: center left;
+    padding-right: 10%;
+    padding-left: 10%;
+    background-color: rgb(41, 41, 41);
+    margin: 20px auto;
+    max-width: auto;
+    color: #ffffff;
+  }
+  .overskrift4 {
+    color: #ffffff;
+  }
+
+  .content-wrapper { 
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: center; 
+    gap: 20px; //* Adjusts space between image and text */
+}
+
+.image-spå img { 
+    position: relative; 
+    left: 70px;
+}
+
+.student-button {
+    padding: 10px 20px; /* Padding around the button text */
+    font-size: 20px; /* Font size of the button text */
+    color: rgb(0, 0, 0); 
+    background-color: #fafdff; 
+    border: none; 
+    border-radius: 10px; 
+    text-decoration: none;
+    cursor: pointer; /* Changes cursor to a hand when hovering over the button */
+}
+/*Valentina's ends*/
+
+/*Ari's part: Style for "Spørsmål om utdanningen?" section*/
 .AriSinDel {
     text-align: center;
     padding: 20px;
@@ -276,7 +321,7 @@ header{
   .AriSinDel-profil img {
     width: 130px;
     height: 170px;
-    box-shadow: 0 4px 8px rgb(138, 149, 245);
+    box-shadow: 0 4px 8px rgb(172, 207, 255);
   }
   
   .AriSinDel-profil-info h3 {
@@ -300,8 +345,6 @@ header{
   }
   /*Ari's part ends*/
 
-
-
   /*Footer for home-page*/
   .footer-Hovedside {
     background-color: #c1e7ff;
@@ -319,6 +362,7 @@ header{
     border-radius: 10px; 
     cursor: pointer; /* Changes cursor to a hand when hovering over the button */
   }
+  
   /*end for home-page footer*/
 
 
@@ -366,20 +410,20 @@ repository.*/
 
 /*navigation bar,"nav-A" because it has a different color than the main navbar*/
 .nav-A ul{ 
-    list-style-type: none; /* Remove bullet points from list */
+    list-style-type: none;
     margin: 0;
     padding: 13px;
     background-color: #699874;
     display: flex;
+    align-items: center;
 }
 
 .nav-A a {
-    display: block; /* Display links as block elements */
+    display: block;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none; /* Remove underline from links */
-    transition: background-color 0.3s ease;
+    text-decoration: none;
     margin: 0 15px;
     padding: 5px 10px;
   }
@@ -388,6 +432,7 @@ repository.*/
 .nav-A li a:hover { 
     background-color: #a7c8ae;
     text-decoration: underline;
+    border-radius: 5px;
 }
 /* Background and text font for the page */
 .main-A { 
