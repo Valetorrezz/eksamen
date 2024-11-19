@@ -10,6 +10,10 @@ body{
 
 main{
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /*Navigationbar*/
@@ -184,31 +188,6 @@ header{
 /*Mahder sin del slutt*/
 
 
-.studieoppbygging-container{
-    display: grid;
-    border-radius: 40px;
-    background-color: gray;
-    width: 100%;
-    height: 500px;
-    gap: 10px;
-    padding: 25px;
-    /*chatgpt*/
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.studie-header{
-    display: flex;
-    background-color: rgb(180, 180, 180);
-    border-radius: 40px;
-    text-align: end;
-}
-
-.emne{
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    border-radius: 40px;
-    text-align: center;
-}
 
 /*Nederste delen Ari*/
 .AriSinDel {
