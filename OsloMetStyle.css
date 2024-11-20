@@ -9,7 +9,7 @@ body{
 }
 
 
-/* Main Container: Adds margin around main content */
+/*Main Container: Adds margin around main content, centers the video*/
 main{
     margin: 20px;
     display: flex;
@@ -98,6 +98,15 @@ main{
 /*Centers for heading 2, "Nøkkelinformasjon"*/
 .headline2 {
     text-align: center;
+}
+
+/*Position for the light blue boxes*/
+.container {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; /* Avstand mellom boksene */
+    margin: 0 auto; /*sentrer boksene i midten*/
+    padding: 40px;
 }
 
 /* Styles for all the light-blue boxes */
@@ -306,6 +315,7 @@ main{
 /*Miriam's part ends */
 
 /*Mahder's part 1: Style for the "Hvordan foregår undervisning" and "Hva koster det" section*/
+/*Style for the container*/
 .wrapper {
     display:flex;
     max-width: auto;
@@ -317,33 +327,154 @@ main{
 .mahder1, .side-content {
     flex: 1;
     padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
 }
 
+.mahder1 {
+    border-right: 2px solid white;
+}
+
+/*Style for left heading*/
+.mahder1 h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+/*Style for left paragraph*/
 .mahder1 p {
     color:white;
     margin-bottom: 20px;
 }
+
+/*Style for list/points*/
 .mahder1 ul { 
     list-style-type: disc;
     padding-left: 20px;
     color: white;
 }
 
+/*Style for right side content*/
 .side-content {
     flex: 1;
     background-color: rgb(41, 41, 41);
     padding: 20px;
-    background-color: #ffffffeb;
-    margin: 20px auto;
-    max-width: 600px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(58, 157, 238, 0.1);
+    color: white;
 }
-  
-  .AriSinDel h2 {
+
+/*Style for right side heading*/
+.side-content h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    color: white;
+}
+
+/*Style for right side paragraph*/
+.side-content p {
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    list-style-type: disc;
+}
+/*Mahder's part ends*/
+
+
+/* mia's part: Style for "Hva kan du jobbe som?" , "Videre studiemuligheter" and "Utveksling" section*/
+/*Aligns all the content*/
+.miaspart {
+    align-content: center;
+}
+
+/*Style for text boxes*/
+.firstbox, .secondbox  {
+    background-color: #e0f7ff;
+    width: 400px;
+    padding: 30px;
+    margin: 50px;
+    border-radius: 20px;
+}
+
+/*Posistion for first text box*/
+.firstbox {
+    float: left;
+    margin-bottom: 40px;
+}
+
+/*Posistion for second text box*/
+.secondbox {
+    float: right;
+    margin-top: 54px;
+    margin-right: 90px;
+}
+
+/* Position for first image */
+.itjobb {
+    float: right;
+    min-width: 56%;
+    min-height: 56%;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+/* Position for second image*/
+.exchangestudent {
+    float: left;
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 20px;
+    margin-top: 22px;
+    margin-left: 90px;
+}
+/* mia's part ends */
+
+/*Valentina's part: Style for "Studenthistorier*/  
+/*Style for conatiner*/
+.studenthistorier{
+    padding-top: 5em;
+    padding-bottom: 5em;
+    text-align: center left;
+    padding-right: 10%;
+    padding-left: 10%;
+    background-color: rgb(41, 41, 41);
+    margin: 20px auto;
+    max-width: auto;
+    color: #ffffff;
+  }
+  /*Style for "Studenthistorier" headline*/
+  .headline4 {
+    color: #ffffff;
+}
+/*Posistion content beside each other*/
+  .content-wrapper { 
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: center; 
+    gap: 20px; //* Adjusts space between image and text */
+}
+
+/*Positions image*/
+.image-spå img { 
+    position: relative; 
+    left: 70px;
+}
+
+/*Style for button*/
+.student-button {
+    padding: 10px 20px; /* Padding around the button text */
+    font-size: 20px; /* Font size of the button text */
+    color: rgb(0, 0, 0); 
+    background-color: #fafdff; 
+    border: none; 
+    border-radius: 10px; 
+    text-decoration: none;
+    cursor: pointer; /* Changes cursor to a hand when hovering over the button */
+}
+/*Valentina's ends*/
+
+/*Ari's del: tyle for "Fagligleder"*/
+.AriSinDel h2 {
     font-size: 24px;
     color: black;
 }
@@ -396,95 +527,8 @@ main{
     text-decoration: underline;
 }
 
-  
-/*Mahder's part ends*/
-
-
-/* mia's part: Style for "Hva kan du jobbe som?" , "Videre studiemuligheter" and "Utveksling" section*/
-.miaspart {
-    align-content: center;
-}
-
-.firstbox, .secondbox  {
-    background-color: #e0f7ff;
-    width: 400px;
-    padding: 30px;
-    margin: 50px;
-    border-radius: 20px;
-}
-
-.firstbox {
-    float: left;
-    margin-bottom: 40px;
-}
-
-.secondbox {
-    float: right;
-    margin-top: 54px;
-    margin-right: 90px;
-}
-
-.itjobb {
-    float: right;
-    min-width: 56%;
-    min-height: 56%;
-    border-radius: 20px;
-    margin-top: 50px;
-    margin-right: 50px;
-}
-
-.exchangestudent {
-    float: left;
-    max-width: 50%;
-    max-height: 50%;
-    border-radius: 20px;
-    margin-top: 22px;
-    margin-left: 90px;
-}
-/* mia's part ends */
-
-/*Valentina's part: Style for "Studenthistorier*/  
-.studenthistorier{
-    padding-top: 5em;
-    padding-bottom: 5em;
-    text-align: center left;
-    padding-right: 10%;
-    padding-left: 10%;
-    background-color: rgb(41, 41, 41);
-    margin: 20px auto;
-    max-width: auto;
-    color: #ffffff;
-  }
-  /*Style for "Studenthistorier" headline*/
-  .headline4 {
-    color: #ffffff;
-}
-
-  .content-wrapper { 
-    display: flex; 
-    align-items: flex-start; 
-    justify-content: center; 
-    gap: 20px; //* Adjusts space between image and text */
-}
-
-.image-spå img { 
-    position: relative; 
-    left: 70px;
-}
-
-.student-button {
-    padding: 10px 20px; /* Padding around the button text */
-    font-size: 20px; /* Font size of the button text */
-    color: rgb(0, 0, 0); 
-    background-color: #fafdff; 
-    border: none; 
-    border-radius: 10px; 
-    text-decoration: none;
-    cursor: pointer; /* Changes cursor to a hand when hovering over the button */
-}
-/*Valentina's ends*/
-
 /*Ari's part: Style for "Spørsmål om utdanningen?" section*/
+/*Style for background conatiner*/
 .AriSinDel {
     text-align: center;
     padding: 20px;
@@ -493,19 +537,21 @@ main{
     max-width: 600px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(58, 157, 238, 0.1);
-}
-
-.AriSinDel h2 {
+  }
+  /*Style for headings*/
+  .AriSinDel h2 {
     font-size: 24px;
     color: black;
-}
+  }
   
-.AriSinDel p {
+  /*Style for paragrphs*/
+  .AriSinDel p {
     font-size: 16px;
     color: black;
-}
-
-.AriSinDel-kursleder {
+  }
+  
+/*Style for the small container*/
+  .AriSinDel-kursleder {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -514,42 +560,47 @@ main{
     background-color: rgb(255, 255, 255);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+  }
   
-.AriSinDel-profil {
+  .AriSinDel-profil {
     display: flex;
     align-items: center;
     gap: 15px;
-}
+  }
   
-.AriSinDel-profil img {
+  .AriSinDel-profil img {
     width: 130px;
     height: 170px;
     box-shadow: 0 4px 8px rgb(172, 207, 255);
-}
+  }
   
-.AriSinDel-profil-info h3 {
+  /*Style for heading inside small container*/
+  .AriSinDel-profil-info h3 {
     margin: 0;
     font-size: 20px;
     color: #070202;
-}
+  }
   
-.AriSinDel-profil-info p {
+  /*Style for pargraph inside the small container*/
+  .AriSinDel-profil-info p {
     margin: 5px 0;
     color: #0a0a0c;
-}
+  }
   
-.AriSinDel-profil-info a {
+  /*Styles for mail link*/
+  .AriSinDel-profil-info a {
     color: #060606;
     text-decoration: none;
-}
+  }
   
-.AriSinDel-profil-info a:hover {
+  .AriSinDel-profil-info a:hover {
     text-decoration: underline;
-}
+  }
   /*Ari's part ends*/
 
+
   /*Footer for home-page*/
+  /*Style for footer background container*/
   .footer-Main {
     background-color: #c1e7ff;
     padding-top: 3em;
@@ -558,10 +609,12 @@ main{
     margin-bottom: 0px;
 }
 
+/*Centers the the heading and button*/
   .center-first-contet{
     text-align: center;
   }
 
+  /* Posistions the texts beside each other, and style for container*/
   .footer-container {
     display:flex;
     background-color: #c1e7ff;
@@ -572,33 +625,32 @@ main{
     gap: 22%; /* Space between columns */
     align-items: center;
   }
-  .footer-h{
-    text-align: center;
-  }
 
+    /*Style for list type for the links*/
   .m-footer-links{
     list-style-type: none;
   }
-
+    /* Style for links*/
   .a-link-black{
     text-decoration: none;
     color: #000;
   }
-
+  /*Style for hover over the links*/
   .m-footer-links :hover{
     text-decoration: underline;
   }
 
+  /*Style for social media links*/
   .m-footer-social-link {
     text-decoration: none;
     color: #000;
   }
-
+/*Style for hover over the social media links*/
   .m-footer-social-link :hover{
     text-decoration: underline;
   }
 
-
+/*Style for button*/
   .footer-button { /*Button class*/
     padding: 10px 20px; /* Padding around the button text */
     font-size: 16px; /* Font size of the button text */
