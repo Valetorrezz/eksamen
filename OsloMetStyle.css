@@ -19,11 +19,6 @@ main{
 }
 
 /*Navigationbar*/
-/* Color for the header Trengs ikke
-header{
-    background-color: #ffffff;
-}*/
-
 /* Styles for the navigation bar list */
 .navbar ul {
     list-style-type: none;
@@ -155,7 +150,7 @@ header{
 } 
 /*Valentina's part ends*/
 
-/*Miriam's part for studystructure*/
+/*Miriam's section for studystructure-table*/
 .miriam{
     max-width: 100%;
 }
@@ -163,21 +158,23 @@ header{
     text-align: center;
     font-size: xx-large;
 }
-
+/*Subheading in parentcontainers*/
 .studieår{
     text-align: center;
     font-size: x-large;
 }
+/*Subheading in parentcontainer2 and 3 stretches across 1st row*/
 .år2, .år3{
     grid-column: 1 / span 4; 
     grid-row: 1;       
 
 }
 
-/*chat gpt*/
+/*Positions id item to default, with ability to adjust placement properties*/
 #stjerne{
     position: relative;
 }
+/*Adds content and positioning at the top right corner of some items*/
 #stjerne::after{
     content: "*";
     position: absolute;
@@ -186,12 +183,14 @@ header{
     font-size: medium;
     font-weight: bold;
 }
+/*Grid placement and styling of info at bottom of parentcontainers*/
 .valgfrittemne{
     grid-column: 4;
     grid-row: 6;
     text-align: end;
     font-weight: bold;
 }
+/*Styling of semester subheading*/
 .sem{
     margin-top: 20px;
     margin-bottom: 10px;
@@ -201,45 +200,51 @@ header{
     font-weight: bold;
     margin-right: 5px;
 }
+/*Styling of classes subheading*/
 .emnegruppe{
+    font-weight: initial;
     margin-top: 20px;
     margin-bottom: 10px;
     padding:5px;
     background-color: rgb(216, 234, 240)
 
 }
+/*Styling of classcodes*/
 .emnekode{
     background-color: rgb(216, 234, 240);
     text-align: end;
     font-size: small;
 }
+/*Styling and creation of 3 gridboxes*/
 .studie-parentcontainer{
-    overflow: auto;
-    display: grid;
+    overflow: auto; /*Sets adaptive property if content overflows*/
+    display: grid; 
     background-color: lightblue;
     border: 10px solid rgb(128, 158, 168);
     padding: 20px 10px;
     margin: 20px auto;
     border-radius: 5px;
 }
+
 .studie-parentcontainer1{
     width: 50%;
     padding: 20px;
 }
+/*Creates 2 grid templates with automated properties*/
 .studie-parentcontainer2, .studie-parentcontainer3{
-    grid-auto-columns: auto; /*4 kolonner*/
-    grid-auto-rows: auto; /*6 rader*/
-    width: 100%;
-    box-sizing: border-box;
+    grid-auto-columns: auto; /*4 columns*/
+    grid-auto-rows: auto; /*6 rows*/
 }
-
+/*Creates grid templates within childrencontainers*/
 .studie-container{
     display: grid;
-    grid-template-columns: auto auto;
-    grid-auto-rows: auto;
+    grid-template-columns: auto auto; /*2 columns*/
+    grid-auto-rows: auto; /*2 rows*/ 
     gap: 5px;
     margin: 5px;
 }
+
+/*Sets column and row placements for childrencontainers*/
 
 .studie-container3, .studie-container5, .studie-container11, .studie-container12{
     grid-column: 1;
@@ -268,6 +273,7 @@ header{
     grid-row: 5;        
 }
 
+/* Sets column and row placements for semester subheadings*/
 .sem3, .sem5{
     grid-column: 1; 
     grid-row: 2;       
@@ -295,6 +301,7 @@ header{
     grid-row: 2;
 }
 
+/*Styling for each child item*/
 .studie-item{
     border: 2px solid black;
     background-color: aliceblue;
@@ -512,18 +519,18 @@ header{
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(58, 157, 238, 0.1);
 }
-  
-  .AriSinDel h2 {
+
+.AriSinDel h2 {
     font-size: 24px;
     color: black;
 }
   
-  .AriSinDel p {
+.AriSinDel p {
     font-size: 16px;
     color: black;
 }
 
-  .AriSinDel-kursleder {
+.AriSinDel-kursleder {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -534,35 +541,35 @@ header{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
   
-  .AriSinDel-profil {
+.AriSinDel-profil {
     display: flex;
     align-items: center;
     gap: 15px;
 }
   
-  .AriSinDel-profil img {
+.AriSinDel-profil img {
     width: 130px;
     height: 170px;
     box-shadow: 0 4px 8px rgb(172, 207, 255);
 }
   
-  .AriSinDel-profil-info h3 {
+.AriSinDel-profil-info h3 {
     margin: 0;
     font-size: 20px;
     color: #070202;
 }
   
-  .AriSinDel-profil-info p {
+.AriSinDel-profil-info p {
     margin: 5px 0;
     color: #0a0a0c;
 }
   
-  .AriSinDel-profil-info a {
+.AriSinDel-profil-info a {
     color: #060606;
     text-decoration: none;
 }
   
-  .AriSinDel-profil-info a:hover {
+.AriSinDel-profil-info a:hover {
     text-decoration: underline;
 }
   /*Ari's part ends*/
@@ -627,7 +634,7 @@ header{
     cursor: pointer; /* Changes cursor to a hand when hovering over the button */
 }
   
-  /*end for home-page footer*/
+/*end for home-page footer*/
 
 
   
