@@ -28,7 +28,7 @@ header{
 .navbar ul {
     list-style-type: none;
     margin: 0;
-    padding: 13px;
+    padding: 5px;
     background-color: #98d8ff;
     width: 100%;
     display: flex;
@@ -207,6 +207,7 @@ header{
     border: 10px solid rgb(128, 158, 168);
     padding: 20px 10px;
     margin: 20px auto;
+    border-radius: 5px;
 }
 .studie-parentcontainer1{
     width: 50%;
