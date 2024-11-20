@@ -1,15 +1,17 @@
 /*Index.html*/
 /* Body Styles: Sets default margin, background color, font, and text color */
 body{
-    margin:0px;
     background-color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
-    margin: 0;
     padding: 0;
+    margin:0;
 }
+
+
 /* Main Container: Adds margin around main content */
 main{
+    width: 100%;
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -29,6 +31,7 @@ header{
     margin: 0;
     padding: 13px;
     background-color: #446494;
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -49,12 +52,12 @@ header{
     background-color: #6090d4;
     border-radius: 5px;
     text-decoration: underline;
-  }
+}
 
   /*Style to get rid of the shadow behind the picture*/
   .logo {
     box-shadow: none;
-  }
+}
 
   /*Valentina's part: Style for "Matematisk modellering", "Nøkkeltall", "Hva lærer du?" sections*/
 /* Styles for the headline section, the first light-blue container */
@@ -144,6 +147,145 @@ header{
 }
 /*Valentina's part ends*/
 
+/*Miriam's part for studystructure*/
+.miriam{
+    margin: 50px;
+    max-width: 100%;
+}
+
+.studieår{
+    text-align: center;
+}
+.år2, .år3{
+    grid-column: 1 / 5; 
+    grid-row: 1;       
+
+}
+/*chat gpt*/
+#stjerne{
+    position: relative;
+}
+#stjerne::after{
+    content: "*";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: large;
+    font-weight: bold;
+}
+.valgfrittemne{
+    grid-column: 4/5;
+    grid-row: 6;
+    text-align: end;
+    font-weight: bold;
+}
+.sem{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding:5px;
+    background-color: rgb(216, 234, 240);
+    font-size: larger;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.emnegruppe{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding:5px;
+    background-color: rgb(216, 234, 240)
+
+}
+.emnekode{
+    background-color: rgb(216, 234, 240);
+    text-align: end;
+    margin-top: 15px;
+    font-size: small;
+
+}
+.parentcontainer{
+    overflow: auto;
+    display: grid;
+    background-color: lightblue;
+    border: 10px solid rgb(128, 158, 168);
+    padding: 20px;
+    margin: 10px auto;
+}
+.parentcontainer2, .parentcontainer3{
+    grid-auto-columns: auto;
+    grid-auto-rows: auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 5px;
+    margin: 5px;
+}
+
+.container3, .container5, .container11, .container12{
+    grid-column: 1/2;
+    border-right: 2px solid rgb(109, 109, 109);
+    padding-right: 20px;
+}
+
+.container4, .container6, .container5-13, .container6-14{
+    grid-column: 2/3;
+    border-right: 2px solid rgb(109, 109, 109);
+    padding-right: 20px;
+}
+.container7, .container8, .container5-15, .container6-16{
+    grid-column: 3/4;
+    border-right: 2px solid rgb(75, 75, 75);
+    padding-right: 20px;
+}
+.container9,.container10,.container5-17, .container6-18{
+    grid-column: 4/5;
+}
+
+.container3, .container4, .container7, .container9, .container5-13, .container11, .container5-15, .container5-17{
+    grid-row: 3; 
+}
+.container5, .container6, .container8, .container10, .container12, .container6-14, .container6-16, .container6-18{
+    grid-row: 5;        
+}
+
+.sem3, .sem5{
+    grid-column: 1 / 2; /* Første kolonne */
+    grid-row: 2;        /* Andre rad */
+}
+.sem4, .sem6{
+    grid-column: 1 / 2; /* Første kolonne */
+    grid-row: 4;        /* Fjerde rad */
+    
+}
+
+.matteogfysikk{
+    grid-column: 2 / 3; /* Andre kolonne */
+    grid-row: 2;        /* Andre rad */
+    margin-right: 5px;
+}
+
+.statistiskedatadrevne{
+    margin-right: 5px;
+    grid-column: 3/4;
+    grid-row: 2;
+}
+
+.vitenskapeligeberegninger{
+    grid-column: 4/5;
+    grid-row: 2;
+}
+
+.item{
+    border: 2px solid black;
+    background-color: aliceblue;
+    padding: 20px;
+    margin: 1px;
+    font-size: large;
+}
+/*Miriam's part ends */
+
 /*Mahder's part 1: Style for the "Hvordan foregår undervisning" and "Hva koster det" section*/
 .wrapper {
     display:flex;
@@ -156,18 +298,11 @@ header{
 .mahder1, .side-content {
     flex: 1;
     padding: 20px;
-    color: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.mahder1 {
-    border-right: 2px solid white;
-}
-
-.mahder1 h1 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: white;
-}
 .mahder1 p {
     color:white;
     margin-bottom: 20px;
@@ -182,22 +317,67 @@ header{
     flex: 1;
     background-color: rgb(41, 41, 41);
     padding: 20px;
-    color: white;
+    background-color: #ffffffeb;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(58, 157, 238, 0.1);
 }
-
-.side-content h1 {
+  
+  .AriSinDel h2 {
     font-size: 24px;
-    margin-bottom: 15px;
-    margin-left: 15px;
-    color: white;
+    color: black;
+}
+  
+  .AriSinDel p {
+    font-size: 16px;
+    color: black;
+}
+  
+  .AriSinDel-kursleder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(241, 246, 248);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+  .AriSinDel-profil {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+  
+  .AriSinDel-profil img {
+    width: 130px;
+    height: 170px;
+    box-shadow: 0 4px 8px rgb(138, 149, 245);
+}
+  
+  .AriSinDel-profil-info h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #070202;
+}
+  
+  .AriSinDel-profil-info p {
+    margin: 5px 0;
+    color: #0a0a0c;
+}
+  
+  .AriSinDel-profil-info a {
+    color: #060606;
+    text-decoration: none;
+}
+  
+  .AriSinDel-profil-info a:hover {
+    text-decoration: underline;
 }
 
-.side-content p {
-    color: white;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    list-style-type: disc;
-}
+  
 /*Mahder's part ends*/
 
 
@@ -355,6 +535,7 @@ header{
     text-align: center;
     padding-top: 3em;
     padding-bottom: 3em;
+    width: 100%;
   }
 
   .footer-b { /*Button class*/
@@ -538,6 +719,7 @@ p {
     line-height: 1.6;
 }
 
+
 /*Style for images*/
 img {
     display: block;
@@ -560,7 +742,7 @@ img {
 }
 
 /* Placement of boxes */
-.container { 
+.container-A, .container-Main { 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
