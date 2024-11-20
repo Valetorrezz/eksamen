@@ -69,7 +69,7 @@ main{
 }
 
 /*Headline size*/
-.text1{
+.headline1{
     font-size: 45px;
 }
 
@@ -81,8 +81,8 @@ main{
     width: fit-content; /* Adjust container width */
     margin: 0 auto; /* Center boxes */
 }
-/*Styles for the buttom boxes*/
-.box1 {
+/*Styles for the small boxes*/
+.small-box {
     width: 150px;
     height: 60px;
     background-color: #4c82af;
@@ -95,8 +95,8 @@ main{
     padding: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-/*Style for the second heading*/
-.overskrift2 {
+/*Centers for heading 2, "Nøkkelinformasjon"*/
+.headline2 {
     text-align: center;
 }
 
@@ -107,6 +107,11 @@ main{
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*Centers heading 3 "Hva lærer du?"*/
+.headline3 { 
+    text-align: center; 
 }
 
 /*Styles for setting a background and a container on the content section*/
@@ -134,11 +139,6 @@ main{
     text-align: left; /* Left-aligns text */
     max-width: 50%; /* Adjust width as needed */
 } 
-
-/*Centers heading 3*/
-.overskrift3 { 
-    text-align: center; 
-}
 /*Valentina's part ends*/
 
 /*Miriam's section for studystructure-table*/
@@ -454,8 +454,9 @@ main{
     margin: 20px auto;
     max-width: auto;
     color: #ffffff;
-}
-  .overskrift4 {
+  }
+  /*Style for "Studenthistorier" headline*/
+  .headline4 {
     color: #ffffff;
 }
 
@@ -549,16 +550,56 @@ main{
   /*Ari's part ends*/
 
   /*Footer for home-page*/
-.footer-Hovedside {
+  .footer-Main {
     background-color: #c1e7ff;
-    text-align: center;
     padding-top: 3em;
     padding-bottom: 3em;
     width: 100%;
     margin-bottom: 0px;
 }
 
-.footer-b { /*Button class*/
+  .center-first-contet{
+    text-align: center;
+  }
+
+  .footer-container {
+    display:flex;
+    background-color: #c1e7ff;
+    padding: 60px; 
+    margin-top: 10px;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */ 
+    gap: 22%; /* Space between columns */
+    align-items: center;
+  }
+  .footer-h{
+    text-align: center;
+  }
+
+  .m-footer-links{
+    list-style-type: none;
+  }
+
+  .a-link-black{
+    text-decoration: none;
+    color: #000;
+  }
+
+  .m-footer-links :hover{
+    text-decoration: underline;
+  }
+
+  .m-footer-social-link {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .m-footer-social-link :hover{
+    text-decoration: underline;
+  }
+
+
+  .footer-button { /*Button class*/
     padding: 10px 20px; /* Padding around the button text */
     font-size: 16px; /* Font size of the button text */
     color: rgb(0, 0, 0); 
