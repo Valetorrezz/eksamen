@@ -126,7 +126,7 @@ header{
     display: flex; 
     align-items: flex-start; 
     justify-content: center; 
-    gap: 20px; //* Adjusts space between image and text */
+    gap: 20px; /* Adjusts space between image and text */
 }
 /*Style for image*/
 .image-logo img { 
@@ -149,7 +149,8 @@ header{
 
 /*Miriam's part for studystructure*/
 .miriam{
-    max-width: 100%;
+    max-width: 95%;
+    border: 5px dotted black;
 }
 
 .studieår{
@@ -206,8 +207,12 @@ header{
     display: grid;
     background-color: lightblue;
     border: 10px solid rgb(128, 158, 168);
+    padding: 20px 5px;
+    margin: 20px auto;
+}
+.studie-parentcontainer1{
+    width: 50%;
     padding: 20px;
-    margin: 10px auto;
 }
 .studie-parentcontainer2, .studie-parentcontainer3{
     grid-auto-columns: auto;
