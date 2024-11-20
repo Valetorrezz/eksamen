@@ -20,17 +20,17 @@ main{
 }
 
 /*Navigationbar*/
-/* Color for the header */
+/* Color for the header Trengs ikke
 header{
-    background-color: #446494;
-}
+    background-color: #ffffff;
+}*/
 
 /* Styles for the navigation bar list */
 .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 13px;
-    background-color: #446494;
+    background-color: lightblue;
     width: 100%;
     display: flex;
     align-items: center;
@@ -49,7 +49,7 @@ header{
 
 /* Hover effect for navigation bar links */
   .navbar a:hover {
-    background-color: #6090d4;
+    background-color: rgb(211, 238, 255);
     border-radius: 5px;
     text-decoration: underline;
 }
