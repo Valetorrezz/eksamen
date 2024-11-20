@@ -149,7 +149,6 @@ header{
 
 /*Miriam's part for studystructure*/
 .miriam{
-    margin: 50px;
     max-width: 100%;
 }
 
@@ -202,7 +201,7 @@ header{
     font-size: small;
 
 }
-.parentcontainer{
+.studie-parentcontainer{
     overflow: auto;
     display: grid;
     background-color: lightblue;
@@ -210,12 +209,12 @@ header{
     padding: 20px;
     margin: 10px auto;
 }
-.parentcontainer2, .parentcontainer3{
+.studie-parentcontainer2, .studie-parentcontainer3{
     grid-auto-columns: auto;
     grid-auto-rows: auto;
 }
 
-.container{
+.studie-container{
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
@@ -223,46 +222,46 @@ header{
     margin: 5px;
 }
 
-.container3, .container5, .container11, .container12{
+.studie-container3, .studie-container5, .studie-container11, .studie-container12{
     grid-column: 1/2;
     border-right: 2px solid rgb(109, 109, 109);
     padding-right: 20px;
 }
 
-.container4, .container6, .container5-13, .container6-14{
+.studie-container4, .studie-container6, .studie-container5-13, .studie-container6-14{
     grid-column: 2/3;
     border-right: 2px solid rgb(109, 109, 109);
     padding-right: 20px;
 }
-.container7, .container8, .container5-15, .container6-16{
+.studie-container7, .studie-container8, .studie-container5-15, .studie-container6-16{
     grid-column: 3/4;
     border-right: 2px solid rgb(75, 75, 75);
     padding-right: 20px;
 }
-.container9,.container10,.container5-17, .container6-18{
+.studie-container9,.studie-container10,.studie-container5-17, .studie-container6-18{
     grid-column: 4/5;
 }
 
-.container3, .container4, .container7, .container9, .container5-13, .container11, .container5-15, .container5-17{
+.studie-container3, .studie-container4, .studie-container7, .studie-container9, .studie-container5-13, .studie-container11, .studie-container5-15, .studie-container5-17{
     grid-row: 3; 
 }
-.container5, .container6, .container8, .container10, .container12, .container6-14, .container6-16, .container6-18{
+.studie-container5, .studie-container6, .studie-container8, .studie-container10, .studie-container12, .studie-container6-14, .studie-container6-16, .studie-container6-18{
     grid-row: 5;        
 }
 
 .sem3, .sem5{
-    grid-column: 1 / 2; /* Første kolonne */
-    grid-row: 2;        /* Andre rad */
+    grid-column: 1 / 2; 
+    grid-row: 2;       
 }
 .sem4, .sem6{
-    grid-column: 1 / 2; /* Første kolonne */
-    grid-row: 4;        /* Fjerde rad */
+    grid-column: 1 / 2; 
+    grid-row: 4;        
     
 }
 
 .matteogfysikk{
-    grid-column: 2 / 3; /* Andre kolonne */
-    grid-row: 2;        /* Andre rad */
+    grid-column: 2 / 3;
+    grid-row: 2;       
     margin-right: 5px;
 }
 
@@ -277,12 +276,15 @@ header{
     grid-row: 2;
 }
 
-.item{
+.studie-item{
     border: 2px solid black;
     background-color: aliceblue;
     padding: 20px;
     margin: 1px;
     font-size: large;
+}
+.studie-item a{
+    color: black;
 }
 /*Miriam's part ends */
 
