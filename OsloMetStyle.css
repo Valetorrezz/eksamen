@@ -9,7 +9,7 @@ body{
 }
 
 
-/* Main Container: Adds margin around main content */
+/*Main Container: Adds margin around main content, centers the video*/
 main{
     margin: 20px;
     display: flex;
@@ -103,6 +103,15 @@ header{
 /*Centers for heading 2, "Nøkkelinformasjon"*/
 .headline2 {
     text-align: center;
+}
+
+/*Position for the light blue boxes*/
+.container {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; /* Avstand mellom boksene */
+    margin: 0 auto; /*sentrer boksene i midten*/
+    padding: 40px;
 }
 
 /* Styles for all the light-blue boxes */
@@ -310,11 +319,18 @@ header{
 .mahder1, .side-content {
     flex: 1;
     padding: 20px;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
 }
 
+.mahder1 {
+    border-right: 2px solid white;
+}
+
+.mahder1 h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: white;
+}
 .mahder1 p {
     color:white;
     margin-bottom: 20px;
@@ -329,13 +345,24 @@ header{
     flex: 1;
     background-color: rgb(41, 41, 41);
     padding: 20px;
-    background-color: #ffffffeb;
-    margin: 20px auto;
-    max-width: 600px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(58, 157, 238, 0.1);
+    color: white;
 }
-  
+
+.side-content h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    color: white;
+}
+
+.side-content p {
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+/*Ari's del: "Spørsmål om utdanningen" og "Fagligleder"*/
   .AriSinDel h2 {
     font-size: 24px;
     color: black;
@@ -388,9 +415,7 @@ header{
   .AriSinDel-profil-info a:hover {
     text-decoration: underline;
 }
-
-  
-/*Mahder's part ends*/
+/*Ari's del ends*/
 
 
 /* mia's part: Style for "Hva kan du jobbe som?" , "Videre studiemuligheter" and "Utveksling" section*/
