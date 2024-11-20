@@ -8,6 +8,7 @@ body{
     margin:0;
 }
 
+
 /* Main Container: Adds margin around main content */
 main{
     width: 100%;
@@ -30,6 +31,7 @@ header{
     margin: 0;
     padding: 13px;
     background-color: #446494;
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -50,12 +52,12 @@ header{
     background-color: #6090d4;
     border-radius: 5px;
     text-decoration: underline;
-  }
+}
 
   /*Style to get rid of the shadow behind the picture*/
   .logo {
     box-shadow: none;
-  }
+}
 
   /*Valentina's part: Style for "Matematisk modellering", "Nøkkeltall", "Hva lærer du?" sections*/
 /* Styles for the headline section, the first light-blue container */
@@ -206,17 +208,17 @@ header{
     background-color: lightblue;
     border: 10px solid rgb(128, 158, 168);
     padding: 20px;
-    margin: 10px 15px;
+    margin: 10px auto;
 }
 .parentcontainer2, .parentcontainer3{
-    grid-template-columns: auto auto auto auto auto;
+    grid-auto-columns: auto;
     grid-auto-rows: auto;
 }
 
 .container{
     display: grid;
     grid-template-columns: auto auto;
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-rows: auto;
     gap: 5px;
     margin: 5px;
 }
@@ -320,17 +322,17 @@ header{
     max-width: 600px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(58, 157, 238, 0.1);
-  }
+}
   
   .AriSinDel h2 {
     font-size: 24px;
     color: black;
-  }
+}
   
   .AriSinDel p {
     font-size: 16px;
     color: black;
-  }
+}
   
   .AriSinDel-kursleder {
     display: flex;
@@ -341,39 +343,39 @@ header{
     background-color: rgb(241, 246, 248);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+}
   
   .AriSinDel-profil {
     display: flex;
     align-items: center;
     gap: 15px;
-  }
+}
   
   .AriSinDel-profil img {
     width: 130px;
     height: 170px;
     box-shadow: 0 4px 8px rgb(138, 149, 245);
-  }
+}
   
   .AriSinDel-profil-info h3 {
     margin: 0;
     font-size: 20px;
     color: #070202;
-  }
+}
   
   .AriSinDel-profil-info p {
     margin: 5px 0;
     color: #0a0a0c;
-  }
+}
   
   .AriSinDel-profil-info a {
     color: #060606;
     text-decoration: none;
-  }
+}
   
   .AriSinDel-profil-info a:hover {
     text-decoration: underline;
-  }
+}
 
   
 /*Mahder's part ends*/
@@ -533,6 +535,7 @@ header{
     text-align: center;
     padding-top: 3em;
     padding-bottom: 3em;
+    width: 100%;
   }
 
   .footer-b { /*Button class*/
