@@ -1,30 +1,36 @@
 /*Index.html*/
 /* Body Styles: Sets default margin, background color, font, and text color */
 body{
-    margin:0px;
     background-color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
-    margin: 0;
     padding: 0;
+    margin:0;
 }
+
+
 /* Main Container: Adds margin around main content */
 main{
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /*Navigationbar*/
-/* Color for the header */
+/* Color for the header Trengs ikke
 header{
-    background-color: #446494;
-}
+    background-color: #ffffff;
+}*/
 
 /* Styles for the navigation bar list */
 .navbar ul {
     list-style-type: none;
     margin: 0;
-    padding: 13px;
-    background-color: #446494;
+    padding: 5px;
+    background-color: #98d8ff;
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -42,15 +48,15 @@ header{
 
 /* Hover effect for navigation bar links */
   .navbar a:hover {
-    background-color: #6090d4;
+    background-color: rgb(211, 238, 255);
     border-radius: 5px;
     text-decoration: underline;
-  }
+}
 
   /*Style to get rid of the shadow behind the picture*/
   .logo {
     box-shadow: none;
-  }
+}
 
   /*Valentina's part: Style for "Matematisk modellering", "Nøkkeltall", "Hva lærer du?" sections*/
 /* Styles for the headline section, the first light-blue container */
@@ -124,7 +130,7 @@ header{
     display: flex; 
     align-items: flex-start; 
     justify-content: center; 
-    gap: 20px; //* Adjusts space between image and text */
+    gap: 20px; /* Adjusts space between image and text */
 }
 /*Style for image*/
 .image-logo img { 
@@ -140,6 +146,158 @@ header{
 } 
 /*Valentina's part ends*/
 
+/*Miriam's part for studystructure*/
+.miriam{
+    max-width: 100%;
+}
+.miriam h1{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.studieår{
+    text-align: center;
+    font-size: x-large;
+}
+.år2, .år3{
+    grid-column: 1 / span 4; 
+    grid-row: 1;       
+
+}
+
+/*chat gpt*/
+#stjerne{
+    position: relative;
+}
+#stjerne::after{
+    content: "*";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: medium;
+    font-weight: bold;
+}
+.valgfrittemne{
+    grid-column: 4;
+    grid-row: 6;
+    text-align: end;
+    font-weight: bold;
+}
+.sem{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding:5px;
+    background-color: rgb(216, 234, 240);
+    font-size: large;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.emnegruppe{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding:5px;
+    background-color: rgb(216, 234, 240)
+
+}
+.emnekode{
+    background-color: rgb(216, 234, 240);
+    text-align: end;
+    font-size: small;
+}
+.studie-parentcontainer{
+    overflow: auto;
+    display: grid;
+    background-color: lightblue;
+    border: 10px solid rgb(128, 158, 168);
+    padding: 20px 10px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+.studie-parentcontainer1{
+    width: 50%;
+    padding: 20px;
+}
+.studie-parentcontainer2, .studie-parentcontainer3{
+    grid-auto-columns: auto; /*4 kolonner*/
+    grid-auto-rows: auto; /*6 rader*/
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.studie-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: auto;
+    gap: 5px;
+    margin: 5px;
+}
+
+.studie-container3, .studie-container5, .studie-container11, .studie-container12{
+    grid-column: 1;
+    border-right: 2px solid rgb(109, 109, 109);
+    padding-right: 20px;
+}
+
+.studie-container4, .studie-container6, .studie-container5-13, .studie-container6-14{
+    grid-column: 2;
+    border-right: 2px solid rgb(109, 109, 109);
+    padding-right: 20px;
+}
+.studie-container7, .studie-container8, .studie-container5-15, .studie-container6-16{
+    grid-column: 3;
+    border-right: 2px solid rgb(75, 75, 75);
+    padding-right: 20px;
+}
+.studie-container9,.studie-container10,.studie-container5-17, .studie-container6-18{
+    grid-column: 4;
+}
+
+.studie-container3, .studie-container4, .studie-container7, .studie-container9, .studie-container5-13, .studie-container11, .studie-container5-15, .studie-container5-17{
+    grid-row: 3; 
+}
+.studie-container5, .studie-container6, .studie-container8, .studie-container10, .studie-container12, .studie-container6-14, .studie-container6-16, .studie-container6-18{
+    grid-row: 5;        
+}
+
+.sem3, .sem5{
+    grid-column: 1; 
+    grid-row: 2;       
+}
+.sem4, .sem6{
+    grid-column: 1; 
+    grid-row: 4;        
+    
+}
+
+.matteogfysikk{
+    grid-column: 2;
+    grid-row: 2;       
+    margin-right: 5px;
+}
+
+.statistiskedatadrevne{
+    margin-right: 5px;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.vitenskapeligeberegninger{
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.studie-item{
+    border: 2px solid black;
+    background-color: aliceblue;
+    padding: 15px 10px;
+    margin: 1px;
+    font-size: large;
+}
+.studie-item a{
+    color: black;
+}
+/*Miriam's part ends */
+
 /*Mahder's part 1: Style for the "Hvordan foregår undervisning" and "Hva koster det" section*/
 .wrapper {
     display:flex;
@@ -152,18 +310,11 @@ header{
 .mahder1, .side-content {
     flex: 1;
     padding: 20px;
-    color: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.mahder1 {
-    border-right: 2px solid white;
-}
-
-.mahder1 h1 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: white;
-}
 .mahder1 p {
     color:white;
     margin-bottom: 20px;
@@ -178,22 +329,67 @@ header{
     flex: 1;
     background-color: rgb(41, 41, 41);
     padding: 20px;
-    color: white;
+    background-color: #ffffffeb;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(58, 157, 238, 0.1);
 }
-
-.side-content h1 {
+  
+  .AriSinDel h2 {
     font-size: 24px;
-    margin-bottom: 15px;
-    margin-left: 15px;
-    color: white;
+    color: black;
+}
+  
+  .AriSinDel p {
+    font-size: 16px;
+    color: black;
+}
+  
+  .AriSinDel-kursleder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(241, 246, 248);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+  .AriSinDel-profil {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+  
+  .AriSinDel-profil img {
+    width: 130px;
+    height: 170px;
+    box-shadow: 0 4px 8px rgb(138, 149, 245);
+}
+  
+  .AriSinDel-profil-info h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #070202;
+}
+  
+  .AriSinDel-profil-info p {
+    margin: 5px 0;
+    color: #0a0a0c;
+}
+  
+  .AriSinDel-profil-info a {
+    color: #060606;
+    text-decoration: none;
+}
+  
+  .AriSinDel-profil-info a:hover {
+    text-decoration: underline;
 }
 
-.side-content p {
-    color: white;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    list-style-type: disc;
-}
+  
 /*Mahder's part ends*/
 
 
@@ -255,7 +451,7 @@ header{
   /*Style for "Studenthistorier" headline*/
   .headline4 {
     color: #ffffff;
-  }
+}
 
   .content-wrapper { 
     display: flex; 
@@ -290,18 +486,18 @@ header{
     max-width: 600px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(58, 157, 238, 0.1);
-  }
+}
   
   .AriSinDel h2 {
     font-size: 24px;
     color: black;
-  }
+}
   
   .AriSinDel p {
     font-size: 16px;
     color: black;
-  }
-  
+}
+
   .AriSinDel-kursleder {
     display: flex;
     justify-content: center;
@@ -311,39 +507,39 @@ header{
     background-color: rgb(255, 255, 255);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+}
   
   .AriSinDel-profil {
     display: flex;
     align-items: center;
     gap: 15px;
-  }
+}
   
   .AriSinDel-profil img {
     width: 130px;
     height: 170px;
     box-shadow: 0 4px 8px rgb(172, 207, 255);
-  }
+}
   
   .AriSinDel-profil-info h3 {
     margin: 0;
     font-size: 20px;
     color: #070202;
-  }
+}
   
   .AriSinDel-profil-info p {
     margin: 5px 0;
     color: #0a0a0c;
-  }
+}
   
   .AriSinDel-profil-info a {
     color: #060606;
     text-decoration: none;
-  }
+}
   
   .AriSinDel-profil-info a:hover {
     text-decoration: underline;
-  }
+}
   /*Ari's part ends*/
 
   /*Footer for home-page*/
@@ -351,7 +547,9 @@ header{
     background-color: #c1e7ff;
     padding-top: 3em;
     padding-bottom: 3em;
-  }
+    width: 100%;
+    margin-bottom: 0px;
+}
 
   .center-first-contet{
     text-align: center;
@@ -402,7 +600,7 @@ header{
     border: none; 
     border-radius: 10px; 
     cursor: pointer; /* Changes cursor to a hand when hovering over the button */
-  }
+}
   
   /*end for home-page footer*/
 
@@ -440,8 +638,10 @@ repository.*/
 
 
 /*Activity*/
+
 /*The classes that "shares" the same name as an other class used on the other pages, have an -A at the end that indecades to Activity.*/
-.main {
+/* Background and text font for the page */
+.main-A {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
     margin: 0;
@@ -475,11 +675,7 @@ repository.*/
     text-decoration: underline;
     border-radius: 5px;
 }
-/* Background and text font for the page */
-.main-A { 
-    background-color: #f9f9f9;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
 /* Styles for headline section in the activity page, makes a white container around the content*/
 .headline-A {
     padding-top: 5em;
@@ -562,18 +758,19 @@ repository.*/
     text-align: center;
 }
 
-/*Subtitle*/
+/*Subtitle
 h2 {
     color: #333;
     font-size: 28px;
     margin-top: 20px;
 }
-
+*/
 /*Paragraph*/
 p {
     font-size: 18px;
     line-height: 1.6;
 }
+
 
 /*Style for images*/
 img {
@@ -597,7 +794,7 @@ img {
 }
 
 /* Placement of boxes */
-.container { 
+.container-A, .container-Main { 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
