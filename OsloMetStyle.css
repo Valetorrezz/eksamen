@@ -150,15 +150,21 @@ header{
 .miriam{
     max-width: 100%;
 }
+.miriam h1{
+    text-align: center;
+    font-size: xx-large;
+}
 
 .studieår{
     text-align: center;
+    font-size: x-large;
 }
 .år2, .år3{
     grid-column: 1 / span 4; 
     grid-row: 1;       
 
 }
+
 /*chat gpt*/
 #stjerne{
     position: relative;
@@ -168,7 +174,7 @@ header{
     position: absolute;
     top: 5px;
     right: 5px;
-    font-size: large;
+    font-size: medium;
     font-weight: bold;
 }
 .valgfrittemne{
@@ -182,7 +188,7 @@ header{
     margin-bottom: 10px;
     padding:5px;
     background-color: rgb(216, 234, 240);
-    font-size: larger;
+    font-size: large;
     font-weight: bold;
     margin-right: 5px;
 }
@@ -196,9 +202,7 @@ header{
 .emnekode{
     background-color: rgb(216, 234, 240);
     text-align: end;
-    margin-top: 15px;
     font-size: small;
-
 }
 .studie-parentcontainer{
     overflow: auto;
@@ -285,7 +289,7 @@ header{
 .studie-item{
     border: 2px solid black;
     background-color: aliceblue;
-    padding: 20px;
+    padding: 15px 10px;
     margin: 1px;
     font-size: large;
 }
@@ -443,10 +447,10 @@ header{
     margin: 20px auto;
     max-width: auto;
     color: #ffffff;
-  }
+}
   .overskrift4 {
     color: #ffffff;
-  }
+}
 
   .content-wrapper { 
     display: flex; 
@@ -481,18 +485,18 @@ header{
     max-width: 600px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(58, 157, 238, 0.1);
-  }
+}
   
   .AriSinDel h2 {
     font-size: 24px;
     color: black;
-  }
+}
   
   .AriSinDel p {
     font-size: 16px;
     color: black;
-  }
-  
+}
+
   .AriSinDel-kursleder {
     display: flex;
     justify-content: center;
@@ -502,39 +506,39 @@ header{
     background-color: rgb(255, 255, 255);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+}
   
   .AriSinDel-profil {
     display: flex;
     align-items: center;
     gap: 15px;
-  }
+}
   
   .AriSinDel-profil img {
     width: 130px;
     height: 170px;
     box-shadow: 0 4px 8px rgb(172, 207, 255);
-  }
+}
   
   .AriSinDel-profil-info h3 {
     margin: 0;
     font-size: 20px;
     color: #070202;
-  }
+}
   
   .AriSinDel-profil-info p {
     margin: 5px 0;
     color: #0a0a0c;
-  }
+}
   
   .AriSinDel-profil-info a {
     color: #060606;
     text-decoration: none;
-  }
+}
   
   .AriSinDel-profil-info a:hover {
     text-decoration: underline;
-  }
+}
   /*Ari's part ends*/
 
   /*Footer for home-page*/
@@ -544,7 +548,8 @@ header{
     padding-top: 3em;
     padding-bottom: 3em;
     width: 100%;
-  }
+    margin-bottom: 0px;
+}
 
   .footer-b { /*Button class*/
     padding: 10px 20px; /* Padding around the button text */
@@ -554,7 +559,7 @@ header{
     border: none; 
     border-radius: 10px; 
     cursor: pointer; /* Changes cursor to a hand when hovering over the button */
-  }
+}
   
   /*end for home-page footer*/
 
@@ -592,8 +597,10 @@ repository.*/
 
 
 /*Activity*/
+
 /*The classes that "shares" the same name as an other class used on the other pages, have an -A at the end that indecades to Activity.*/
-.main {
+/* Background and text font for the page */
+.main-A {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
     margin: 0;
@@ -627,11 +634,7 @@ repository.*/
     text-decoration: underline;
     border-radius: 5px;
 }
-/* Background and text font for the page */
-.main-A { 
-    background-color: #f9f9f9;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
 /* Styles for headline section in the activity page, makes a white container around the content*/
 .headline-A {
     padding-top: 5em;
@@ -714,13 +717,13 @@ repository.*/
     text-align: center;
 }
 
-/*Subtitle*/
+/*Subtitle
 h2 {
     color: #333;
     font-size: 28px;
     margin-top: 20px;
 }
-
+*/
 /*Paragraph*/
 p {
     font-size: 18px;
