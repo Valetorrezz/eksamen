@@ -685,6 +685,10 @@ compliance may appear even if the automated test gives an All clear-verdict*/
     padding: 20px;
 }
 
+.accessibility-info li{
+    padding: 5px;
+}
+
 
 
 
