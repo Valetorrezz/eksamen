@@ -150,6 +150,64 @@ main{
 } 
 /*Valentina's part ends*/
 
+/*Mahder's part "opptakskrav og poeng, slik søker du"*/
+.first-wrapper{
+    display:flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 2%;
+}
+
+.left-side, .right-side{
+    flex: 1;
+    padding: 20px;
+}
+
+.left-side{
+    border-right: 2px solid black;
+}
+
+.left-side h1{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.left-side p{
+    margin-bottom: 20px;
+}
+
+.left-side ul{
+    list-style-type: disc;
+    padding-left: 35px;
+}
+
+
+
+
+.right-side{
+    flex: 1;
+    padding: 20px;
+}
+
+.right-side h1{
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.right-side p{
+    margin-left: 15px;
+}
+
+.right-side ul{
+    list-style-type: disc;
+    padding-left: 35px;
+}
+/*Part ends*/
+
 /*Miriam's section for studystructure-table*/
 .miriam{
     max-width: 100%;
@@ -474,6 +532,48 @@ main{
 }
 /*Valentina's ends*/
 
+/*Mahder's new part: "dette er du kanskje interrest i"*/
+.field-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .field-container h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .field-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+  }
+  
+  .field {
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+  }
+  
+  .field h2 {
+      font-size: 1.2em;
+      margin: 0 0 5px;
+      color: #222;
+  }
+  
+  .field p {
+      font-size: 0.9em;
+      color: #555;
+      margin: 0;
+  }
+  /*part ends*/
+
 /*Ari's del: tyle for "Fagligleder"*/
 .AriSinDel h2 {
     font-size: 24px;
@@ -604,52 +704,86 @@ main{
   /*Style for footer background container*/
   .footer {
     background-color: #c1e7ff;
-    padding-top: 3em;
-    padding-bottom: 3em;
-    width: 100%;
-    margin-bottom: 0px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
-/*Centers the the heading and button*/
+/* Add some space below the centered content */
   .center-first-contet{
-    text-align: center;
+    margin-bottom: 20px; 
   }
 
   /* Posistions the texts beside each other, and style for container*/
   .footer-container {
-    display:flex;
-    background-color: #c1e7ff;
-    padding: 60px; 
-    margin-top: 10px;
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */ 
-    gap: 22%; /* Space between columns */
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 0 auto; 
   }
 
-    /*Style for list type for the links*/
-  .m-footer-links{
-    list-style-type: none;
-  }
-    /* Style for links*/
-  .a-link-black{
-    text-decoration: none;
-    color: #000;
-  }
-  /*Style for hover over the links*/
-  .m-footer-links :hover{
-    text-decoration: underline;
-  }
+    /*Style for positioning the links*/
+    .footer-p, .m-footer-links, .footer-social {
+        width: 100%; 
+        max-width: 800px; 
+        margin: 0 auto; 
+    }
+      
+      .m-footer-links {
+        list-style: none; 
+        padding: 0;
+        margin: 20px 0; 
+        display: flex;
+        flex-direction: column; 
+        gap: 10px; 
+      }
 
-  /*Style for social media links*/
-  .m-footer-social-link {
-    text-decoration: none;
-    color: #000;
-  }
-/*Style for hover over the social media links*/
-  .m-footer-social-link :hover{
-    text-decoration: underline;
-  }
+      /*Space between text*/
+      .m-footer-link {
+        margin-bottom: 10px;
+      }
+      
+      /*Style for links*/
+      .a-link-black {
+        text-decoration: none;
+        color: black;
+      }
+      
+      .a-link-black:hover {
+        text-decoration: underline;
+      }
+      
+      /*Style and position for social links*/
+      .footer-social {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; 
+      }
+      
+      .m-footer-social-link {
+        color: black;
+        text-decoration: none;
+      }
+      
+      .m-footer-social-link:hover {
+        text-decoration: underline;
+      }
+      /*"Media Queries: Adjust layout for larger screens, aligning content in a row and ensuring proper spacing." Source: Co-Pilot*/
+      @media (min-width: 600px) {
+        .footer-container {
+          flex-direction: row;
+          justify-content: space-between; /* Space between items in row direction */
+        }
+      
+        .footer-p, .m-footer-links, .footer-social {
+          width: 30%; /* Equal width for each section */
+        }
+      
+        .footer-social {
+          flex-direction: row; /* Align social links in a row */
+        }
+      }
+      
 
 /*Style for button*/
   .footer-button { /*Button class*/
@@ -704,9 +838,41 @@ Left: An example of a Commits history. Names redacted. Right: An example of a sp
 The best collaborative use of Git happens when everyone commits incremental changes, and this is what we
 want documented, if possible. Both examples above indicate frequent and small changes committed to a shared
 repository.*/
-
-
-
+.github-container {
+    background-color: #d4eeff;
+    padding: 20px;
+}
+.footer-github {
+    background-color: #c1e7ff;
+    color: rgb(0, 0, 0); 
+    text-align: center; 
+    padding: 20px 0; 
+    max-width: auto;
+    position: static; /*don't move*/
+    margin: 0;
+}
+.footer-button { /*Button class*/
+    padding: 10px 20px; /* Padding around the button text */
+    font-size: 16px; /* Font size of the button text */
+    color: rgb(0, 0, 0); 
+    background-color: #608ba3; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; /* Changes cursor to a hand when hovering over the button */
+}
+.figures {
+    display: flex; 
+    justify-content: space-between; /* Adjust as needed */ 
+    gap: 20px; /* Space between images */
+}
+.row { 
+    display: flex; 
+    gap: 20px; /* Avstand mellom bildene i samme rad */ 
+}
+.figure { 
+    flex: 1; /* Gir hver bilde lik bredde */ 
+    height: auto; /* Bevarer bilde proporsjonene */ 
+}
 
 
 
@@ -831,13 +997,14 @@ repository.*/
     text-align: center;
 }
 
-/*Subtitle
+/*Subtitle*/
 h2 {
     color: #333;
     font-size: 28px;
     margin-top: 20px;
 }
-*/
+
+
 /*Paragraph*/
 p {
     font-size: 18px;
