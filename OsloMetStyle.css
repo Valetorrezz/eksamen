@@ -279,11 +279,6 @@ main{
 
 
 /* mia's part: Style for "Hva kan du jobbe som?" , "Videre studiemuligheter" and "Utveksling" section*/
-/*Aligns all the content*/
-.miaspart {
-    align-content: center;
-}
-
 /*Style for text boxes*/
 .miaspart {
     display: flex;
@@ -297,7 +292,7 @@ main{
     margin: 50px;
     border-radius: 20px;
 }
-
+/*Style for studiemuligheter box*/
 .studiemuligheter {
     padding: 15px; 
     border: 1px solid #57899a;
