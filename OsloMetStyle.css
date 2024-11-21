@@ -37,7 +37,6 @@ main{
 
 /* Styles for navigation bar links */
 .navbar a {
-    display: block;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 14px 16px;
@@ -388,8 +387,8 @@ main{
 .år2, .år3{
     grid-column: 1 / span 4; 
     grid-row: 1;       
-
 }
+
 
 /*Positions id item to default, with ability to adjust placement properties*/
 #stjerne{
@@ -436,6 +435,7 @@ main{
     text-align: end;
     font-size: small;
 }
+
 /*Styling and creation of 3 gridboxes*/
 .studie-parentcontainer{
     overflow: auto; /*Sets adaptive property if content overflows*/
