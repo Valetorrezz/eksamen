@@ -473,6 +473,48 @@ main{
 }
 /*Valentina's ends*/
 
+/*Mahder's new part: "dette er du kanskje interrest i"*/
+.field-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .field-container h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .field-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+  }
+  
+  .field {
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+  }
+  
+  .field h2 {
+      font-size: 1.2em;
+      margin: 0 0 5px;
+      color: #222;
+  }
+  
+  .field p {
+      font-size: 0.9em;
+      color: #555;
+      margin: 0;
+  }
+  /*part ends*/
+
 /*Ari's del: tyle for "Fagligleder"*/
 .AriSinDel h2 {
     font-size: 24px;
