@@ -601,7 +601,7 @@ main{
 
   /*Footer for home-page*/
   /*Style for footer background container*/
-  .footer-Main {
+  .footer {
     background-color: #c1e7ff;
     padding: 20px;
     font-family: Arial, sans-serif;
@@ -709,6 +709,19 @@ main{
 automated test could tell you. You are recommended to use screenshots from the testing site and of your code.
 When using automated tests, you still have a responsibility to check the code manually as well. Errors/ non-
 compliance may appear even if the automated test gives an All clear-verdict*/
+.accessibility-info h1{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.accessibility-info{
+    background-color: rgb(193, 240, 255);/*Bytter bakgrunnsfarge senere til lik index*/
+    padding: 20px;
+}
+
+.accessibility-info li{
+    padding: 5px;
+}
 
 
 
