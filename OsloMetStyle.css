@@ -284,11 +284,11 @@ main{
 .miaspart {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .firstbox, .secondbox  {
     background-color: #e0f7ff;
-    width: 600px;
     padding: 20px;
     margin: 20px;
     border-radius: 20px;
@@ -296,13 +296,8 @@ main{
     
 }
 
-.firstbox{
-    margin-left: 20px;
-}
 
-.secondboc{
-    margin-right: 20px;
-}
+
 /*Style for studiemuligheter box*/
 .studiemuligheter {
     padding: 15px; 
@@ -536,6 +531,7 @@ main{
 /*Miriam's part ends */
 
 /*Mahder's new part: "dette er du kanskje interrest i"*/
+
 .field-container {
     max-width: 600px;
     margin: 0 auto;
@@ -924,7 +920,10 @@ repository.*/
     text-align: center;
     padding-left: 25%;
     padding-right: 25%;
-    background-color: #ffffff;
+    background-image: url('strand.jpg');
+    background-size: cover;
+    background-position: center;
+
 }
 
 /* Styles for first headline title */
@@ -937,7 +936,7 @@ repository.*/
 
 /* Styles for subtitle */
 .undertekst-A {
-    color: #16a085;
+    color: #192220;
     font-size: 24px;
     text-align: center;
     margin-bottom: 20px;
