@@ -285,11 +285,11 @@ main{
 .miaspart {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .firstbox, .secondbox  {
     background-color: #e0f7ff;
-    width: 600px;
     padding: 20px;
     margin: 20px;
     border-radius: 20px;
@@ -297,13 +297,8 @@ main{
     
 }
 
-.firstbox{
-    margin-left: 20px;
-}
 
-.secondboc{
-    margin-right: 20px;
-}
+
 /*Style for studiemuligheter box*/
 .studiemuligheter {
     padding: 15px; 
@@ -536,6 +531,7 @@ main{
 /*Miriam's part ends */
 
 /*Mahder's new part: "dette er du kanskje interrest i"*/
+
 .field-container {
     max-width: 600px;
     margin: 0 auto;
