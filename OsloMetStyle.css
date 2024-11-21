@@ -365,16 +365,13 @@ main{
 
 /*Studieoppbygging*/
 /*Miriam's section for studystructure-table*/
-.miriam{
+.miriam, #studie-section{
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
 }
-
-.miriam h1{
-    text-align: center;
-    font-size: xx-large;
-}
 /*Subheading in parentcontainers*/
-.studieår{
+.studieår, h1{
     text-align: center;
     font-size: x-large;
 }
@@ -385,11 +382,32 @@ main{
 }
 
 
+.studie-button{
+    align-self: center;
+    background-color:rgb(183, 224, 250);
+    width: 200px;
+    height: 90;
+    padding: 20px;
+    border-radius: 20px;
+    border: 5px solid rgb(128, 158, 168);
+    transition: 0.5s;
+}
+
+.studie-button:hover{
+    width: 220px;
+    height: 100;
+    font-size: medium;
+    background-color:rgb(211, 238, 255);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+
 /*Positions id item to default, with ability to adjust placement properties*/
 #stjerne{
     position: relative;
 }
-/*Adds content and positioning at the top right corner of some items*/
+/*Adds content and positioning at the top right corner of items*/
 #stjerne::after{
     content: "*";
     position: absolute;
@@ -401,7 +419,7 @@ main{
 /*Grid placement and styling of info at bottom of parentcontainers*/
 .valgfrittemne{
     grid-column: 4;
-    grid-row: 6;
+    grid-row: 7;
     text-align: end;
     font-weight: bold;
 }
@@ -410,7 +428,7 @@ main{
     margin-top: 20px;
     margin-bottom: 10px;
     padding:5px;
-    background-color: rgb(216, 234, 240);
+    background-color: #fbfeff; 
     font-size: large;
     font-weight: bold;
     margin-right: 5px;
@@ -421,12 +439,12 @@ main{
     margin-top: 20px;
     margin-bottom: 10px;
     padding:5px;
-    background-color: rgb(216, 234, 240)
+    background-color: #f1faff; 
 
 }
 /*Styling of classcodes*/
 .emnekode{
-    background-color: rgb(216, 234, 240);
+    background-color: rgb(203, 227, 235);
     text-align: end;
     font-size: small;
 }
@@ -439,7 +457,8 @@ main{
     border: 10px solid rgb(128, 158, 168);
     padding: 20px 10px;
     margin: 20px auto;
-    border-radius: 5px;
+    border-radius: 20px;
+    
 }
 
 .studie-parentcontainer1{
@@ -449,7 +468,7 @@ main{
 /*Creates 2 grid templates with automated properties*/
 .studie-parentcontainer2, .studie-parentcontainer3{
     grid-auto-columns: auto; /*4 columns*/
-    grid-auto-rows: auto; /*6 rows*/
+    grid-auto-rows: auto; /*7 rows*/
 }
 /*Creates grid templates within childrencontainers*/
 .studie-container{
@@ -524,10 +543,16 @@ main{
     padding: 15px 10px;
     margin: 1px;
     font-size: large;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+.studie-item:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .studie-item a{
     color: black;
 }
+
 /*Miriam's part ends */
 
 /*Mahder's new part: "dette er du kanskje interrest i"*/
