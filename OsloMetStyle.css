@@ -150,6 +150,64 @@ main{
 } 
 /*Valentina's part ends*/
 
+/*Mahder's part "opptakskrav og poeng, slik søker du"*/
+.first-wrapper{
+    display:flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 2%;
+}
+
+.left-side, .right-side{
+    flex: 1;
+    padding: 20px;
+}
+
+.left-side{
+    border-right: 2px solid black;
+}
+
+.left-side h1{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.left-side p{
+    margin-bottom: 20px;
+}
+
+.left-side ul{
+    list-style-type: disc;
+    padding-left: 35px;
+}
+
+
+
+
+.right-side{
+    flex: 1;
+    padding: 20px;
+}
+
+.right-side h1{
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.right-side p{
+    margin-left: 15px;
+}
+
+.right-side ul{
+    list-style-type: disc;
+    padding-left: 35px;
+}
+/*Part ends*/
+
 /*Miriam's section for studystructure-table*/
 .miriam{
     max-width: 100%;
