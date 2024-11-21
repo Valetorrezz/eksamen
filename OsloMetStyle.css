@@ -285,6 +285,11 @@ main{
 }
 
 /*Style for text boxes*/
+.miaspart {
+    display: flex;
+    flex-direction: row;
+}
+
 .firstbox, .secondbox  {
     background-color: #e0f7ff;
     width: 400px;
