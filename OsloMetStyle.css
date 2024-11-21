@@ -298,20 +298,24 @@ main{
     border-radius: 20px;
 }
 
-/*Posistion for first text box*/
-.firstbox {
-    float: left;
-    margin-bottom: 40px;
+.studiemuligheter {
+    padding: 15px; 
+    border: 1px solid #57899a;
+    border-radius: 8px;
+    background-color: #e0f7ff;
 }
 
-/*Posistion for second text box*/
-.secondbox {
-    float: right;
-    margin-top: 54px;
-    margin-right: 90px;
+.studiemuligheter h3 {
+    font-size: 1.2em;
+    margin: 0 0 5px;
+    color: #222;
 }
 
-
+.studiemuligheter p {
+    font-size: 0.9em;
+    color: #555;
+    margin: 0;
+}
 /* mia's part ends */
 
 /*Valentina's part: Style for "Studenthistorier*/  
