@@ -737,9 +737,41 @@ Left: An example of a Commits history. Names redacted. Right: An example of a sp
 The best collaborative use of Git happens when everyone commits incremental changes, and this is what we
 want documented, if possible. Both examples above indicate frequent and small changes committed to a shared
 repository.*/
-
-
-
+.github-container {
+    background-color: #d4eeff;
+    padding: 20px;
+}
+.footer-github {
+    background-color: #c1e7ff;
+    color: rgb(0, 0, 0); 
+    text-align: center; 
+    padding: 20px 0; 
+    max-width: auto;
+    position: static; /*don't move*/
+    margin: 0;
+}
+.footer-button { /*Button class*/
+    padding: 10px 20px; /* Padding around the button text */
+    font-size: 16px; /* Font size of the button text */
+    color: rgb(0, 0, 0); 
+    background-color: #608ba3; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; /* Changes cursor to a hand when hovering over the button */
+}
+.figures {
+    display: flex; 
+    justify-content: space-between; /* Adjust as needed */ 
+    gap: 20px; /* Space between images */
+}
+.row { 
+    display: flex; 
+    gap: 20px; /* Avstand mellom bildene i samme rad */ 
+}
+.figure { 
+    flex: 1; /* Gir hver bilde lik bredde */ 
+    height: auto; /* Bevarer bilde proporsjonene */ 
+}
 
 
 
