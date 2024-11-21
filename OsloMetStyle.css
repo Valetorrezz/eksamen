@@ -11,15 +11,17 @@ body{
 
 /*Main Container: Adds margin around main content, centers the video*/
 main{
-    margin: auto;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
 }
 .home-main iframe{
-    max-width: auto;
+    max-width: 100%;
 }
+
 
 /*Navigationbar*/
 /* Styles for the navigation bar list */
@@ -279,51 +281,47 @@ main{
 
 
 /* mia's part: Style for "Hva kan du jobbe som?" , "Videre studiemuligheter" and "Utveksling" section*/
-/*Aligns all the content*/
+/*Style for text boxes*/
 .miaspart {
-    align-content: center;
+    display: flex;
+    flex-direction: row;
 }
 
-/*Style for text boxes*/
 .firstbox, .secondbox  {
     background-color: #e0f7ff;
-    width: 400px;
-    padding: 30px;
-    margin: 50px;
+    width: 600px;
+    padding: 20px;
+    margin: 20px;
     border-radius: 20px;
+    margin-top: 40px;
+    
 }
 
-/*Posistion for first text box*/
-.firstbox {
-    float: left;
-    margin-bottom: 40px;
+.firstbox{
+    margin-left: 20px;
 }
 
-/*Posistion for second text box*/
-.secondbox {
-    float: right;
-    margin-top: 54px;
-    margin-right: 90px;
+.secondboc{
+    margin-right: 20px;
+}
+/*Style for studiemuligheter box*/
+.studiemuligheter {
+    padding: 15px; 
+    border: 1px solid #57899a;
+    border-radius: 8px;
+    background-color: #e0f7ff;
 }
 
-/* Position for first image */
-.itjobb {
-    float: right;
-    min-width: 56%;
-    min-height: 56%;
-    border-radius: 20px;
-    margin-top: 50px;
-    margin-right: 50px;
+.studiemuligheter h3 {
+    font-size: 1.2em;
+    margin: 0 0 5px;
+    color: #222;
 }
 
-/* Position for second image*/
-.exchangestudent {
-    float: left;
-    max-width: 50%;
-    max-height: 50%;
-    border-radius: 20px;
-    margin-top: 22px;
-    margin-left: 90px;
+.studiemuligheter p {
+    font-size: 0.9em;
+    color: #555;
+    margin: 0;
 }
 /* mia's part ends */
 
