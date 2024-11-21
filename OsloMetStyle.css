@@ -17,6 +17,9 @@ main{
     align-items: center;
     justify-content: center;
 }
+.home-main iframe{
+    max-width: auto;
+}
 
 /*Navigationbar*/
 /* Styles for the navigation bar list */
@@ -208,170 +211,6 @@ main{
 }
 /*Part ends*/
 
-/*Miriam's section for studystructure-table*/
-.miriam{
-    max-width: 100%;
-}
-
-.miriam h1{
-    text-align: center;
-    font-size: xx-large;
-}
-/*Subheading in parentcontainers*/
-.studieår{
-    text-align: center;
-    font-size: x-large;
-}
-/*Subheading in parentcontainer2 and 3 stretches across 1st row*/
-.år2, .år3{
-    grid-column: 1 / span 4; 
-    grid-row: 1;       
-
-}
-
-/*Positions id item to default, with ability to adjust placement properties*/
-#stjerne{
-    position: relative;
-}
-/*Adds content and positioning at the top right corner of some items*/
-#stjerne::after{
-    content: "*";
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    font-size: medium;
-    font-weight: bold;
-}
-/*Grid placement and styling of info at bottom of parentcontainers*/
-.valgfrittemne{
-    grid-column: 4;
-    grid-row: 6;
-    text-align: end;
-    font-weight: bold;
-}
-/*Styling of semester subheading*/
-.sem{
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding:5px;
-    background-color: rgb(216, 234, 240);
-    font-size: large;
-    font-weight: bold;
-    margin-right: 5px;
-}
-/*Styling of classes subheading*/
-.emnegruppe{
-    font-weight: initial;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding:5px;
-    background-color: rgb(216, 234, 240)
-
-}
-/*Styling of classcodes*/
-.emnekode{
-    background-color: rgb(216, 234, 240);
-    text-align: end;
-    font-size: small;
-}
-/*Styling and creation of 3 gridboxes*/
-.studie-parentcontainer{
-    overflow: auto; /*Sets adaptive property if content overflows*/
-    display: grid; 
-    background-color: lightblue;
-    border: 10px solid rgb(128, 158, 168);
-    padding: 20px 10px;
-    margin: 20px auto;
-    border-radius: 5px;
-}
-
-.studie-parentcontainer1{
-    width: 50%;
-    padding: 20px;
-}
-/*Creates 2 grid templates with automated properties*/
-.studie-parentcontainer2, .studie-parentcontainer3{
-    grid-auto-columns: auto; /*4 columns*/
-    grid-auto-rows: auto; /*6 rows*/
-}
-/*Creates grid templates within childrencontainers*/
-.studie-container{
-    display: grid;
-    grid-template-columns: auto auto; /*2 columns*/
-    grid-auto-rows: auto; /*2 rows*/ 
-    gap: 5px;
-    margin: 5px;
-}
-
-/*Sets column and row placements for childrencontainers*/
-
-.studie-container3, .studie-container5, .studie-container11, .studie-container12{
-    grid-column: 1;
-    border-right: 2px solid rgb(109, 109, 109);
-    padding-right: 20px;
-}
-
-.studie-container4, .studie-container6, .studie-container5-13, .studie-container6-14{
-    grid-column: 2;
-    border-right: 2px solid rgb(109, 109, 109);
-    padding-right: 20px;
-}
-.studie-container7, .studie-container8, .studie-container5-15, .studie-container6-16{
-    grid-column: 3;
-    border-right: 2px solid rgb(75, 75, 75);
-    padding-right: 20px;
-}
-.studie-container9,.studie-container10,.studie-container5-17, .studie-container6-18{
-    grid-column: 4;
-}
-
-.studie-container3, .studie-container4, .studie-container7, .studie-container9, .studie-container5-13, .studie-container11, .studie-container5-15, .studie-container5-17{
-    grid-row: 3; 
-}
-.studie-container5, .studie-container6, .studie-container8, .studie-container10, .studie-container12, .studie-container6-14, .studie-container6-16, .studie-container6-18{
-    grid-row: 5;        
-}
-
-/* Sets column and row placements for semester subheadings*/
-.sem3, .sem5{
-    grid-column: 1; 
-    grid-row: 2;       
-}
-.sem4, .sem6{
-    grid-column: 1; 
-    grid-row: 4;        
-    
-}
-
-.matteogfysikk{
-    grid-column: 2;
-    grid-row: 2;       
-    margin-right: 5px;
-}
-
-.statistiskedatadrevne{
-    margin-right: 5px;
-    grid-column: 3;
-    grid-row: 2;
-}
-
-.vitenskapeligeberegninger{
-    grid-column: 4;
-    grid-row: 2;
-}
-
-/*Styling for each child item*/
-.studie-item{
-    border: 2px solid black;
-    background-color: aliceblue;
-    padding: 15px 10px;
-    margin: 1px;
-    font-size: large;
-}
-.studie-item a{
-    color: black;
-}
-/*Miriam's part ends */
 
 /*Mahder's part 1: Style for the "Hvordan foregår undervisning" and "Hva koster det" section*/
 /*Style for the container*/
@@ -531,6 +370,172 @@ main{
     cursor: pointer; /* Changes cursor to a hand when hovering over the button */
 }
 /*Valentina's ends*/
+
+/*Studieoppbygging*/
+/*Miriam's section for studystructure-table*/
+.miriam{
+    max-width: 100%;
+}
+
+.miriam h1{
+    text-align: center;
+    font-size: xx-large;
+}
+/*Subheading in parentcontainers*/
+.studieår{
+    text-align: center;
+    font-size: x-large;
+}
+/*Subheading in parentcontainer2 and 3 stretches across 1st row*/
+.år2, .år3{
+    grid-column: 1 / span 4; 
+    grid-row: 1;       
+
+}
+
+/*Positions id item to default, with ability to adjust placement properties*/
+#stjerne{
+    position: relative;
+}
+/*Adds content and positioning at the top right corner of some items*/
+#stjerne::after{
+    content: "*";
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: medium;
+    font-weight: bold;
+}
+/*Grid placement and styling of info at bottom of parentcontainers*/
+.valgfrittemne{
+    grid-column: 4;
+    grid-row: 6;
+    text-align: end;
+    font-weight: bold;
+}
+/*Styling of semester subheading*/
+.sem{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding:5px;
+    background-color: rgb(216, 234, 240);
+    font-size: large;
+    font-weight: bold;
+    margin-right: 5px;
+}
+/*Styling of classes subheading*/
+.emnegruppe{
+    font-weight: initial;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding:5px;
+    background-color: rgb(216, 234, 240)
+
+}
+/*Styling of classcodes*/
+.emnekode{
+    background-color: rgb(216, 234, 240);
+    text-align: end;
+    font-size: small;
+}
+/*Styling and creation of 3 gridboxes*/
+.studie-parentcontainer{
+    overflow: auto; /*Sets adaptive property if content overflows*/
+    display: grid; 
+    background-color: #c1e7ff; 
+    border: 10px solid rgb(128, 158, 168);
+    padding: 20px 10px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+.studie-parentcontainer1{
+    width: 50%;
+    padding: 20px;
+}
+/*Creates 2 grid templates with automated properties*/
+.studie-parentcontainer2, .studie-parentcontainer3{
+    grid-auto-columns: auto; /*4 columns*/
+    grid-auto-rows: auto; /*6 rows*/
+}
+/*Creates grid templates within childrencontainers*/
+.studie-container{
+    display: grid;
+    grid-template-columns: auto auto; /*2 columns*/
+    grid-auto-rows: auto; /*2 rows*/ 
+    gap: 5px;
+    margin: 5px;
+}
+
+/*Sets column and row placements for childrencontainers*/
+
+.studie-container3, .studie-container5, .studie-container11, .studie-container12{
+    grid-column: 1;
+    border-right: 2px solid rgb(109, 109, 109);
+    padding-right: 20px;
+}
+
+.studie-container4, .studie-container6, .studie-container5-13, .studie-container6-14{
+    grid-column: 2;
+    border-right: 2px solid rgb(109, 109, 109);
+    padding-right: 20px;
+}
+.studie-container7, .studie-container8, .studie-container5-15, .studie-container6-16{
+    grid-column: 3;
+    border-right: 2px solid rgb(75, 75, 75);
+    padding-right: 20px;
+}
+.studie-container9,.studie-container10,.studie-container5-17, .studie-container6-18{
+    grid-column: 4;
+}
+
+.studie-container3, .studie-container4, .studie-container7, .studie-container9, .studie-container5-13, .studie-container11, .studie-container5-15, .studie-container5-17{
+    grid-row: 3; 
+}
+.studie-container5, .studie-container6, .studie-container8, .studie-container10, .studie-container12, .studie-container6-14, .studie-container6-16, .studie-container6-18{
+    grid-row: 5;        
+}
+
+/* Sets column and row placements for semester subheadings*/
+.sem3, .sem5{
+    grid-column: 1; 
+    grid-row: 2;       
+}
+.sem4, .sem6{
+    grid-column: 1; 
+    grid-row: 4;        
+    
+}
+
+.matteogfysikk{
+    grid-column: 2;
+    grid-row: 2;       
+    margin-right: 5px;
+}
+
+.statistiskedatadrevne{
+    margin-right: 5px;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.vitenskapeligeberegninger{
+    grid-column: 4;
+    grid-row: 2;
+}
+
+/*Styling for each child item*/
+.studie-item{
+    border: 2px solid black;
+    background-color: aliceblue;
+    padding: 15px 10px;
+    margin: 1px;
+    font-size: large;
+}
+.studie-item a{
+    color: black;
+}
+/*Miriam's part ends */
 
 /*Mahder's new part: "dette er du kanskje interrest i"*/
 .field-container {
@@ -797,7 +802,6 @@ main{
 }
   
 /*end for home-page footer*/
-
 
   
     
