@@ -926,7 +926,10 @@ repository.*/
     text-align: center;
     padding-left: 25%;
     padding-right: 25%;
-    background-color: #ffffff;
+    background-image: url('strand.jpg');
+    background-size: cover;
+    background-position: center;
+
 }
 
 /* Styles for first headline title */
@@ -939,7 +942,7 @@ repository.*/
 
 /* Styles for subtitle */
 .undertekst-A {
-    color: #16a085;
+    color: #192220;
     font-size: 24px;
     text-align: center;
     margin-bottom: 20px;
