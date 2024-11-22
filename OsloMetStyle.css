@@ -71,7 +71,7 @@ main{
 }
 
 /* Editing the search and menu bar */
-.nav-right {
+/*.nav-right {
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -85,13 +85,6 @@ main{
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-@media (max-width: 768px) {
-    .search-bar {
-      width: 80px; /* Shrink width on smaller screens */
-      height: 15px; /* Adjust height */
-      font-size: 12px; /* Reduce font size for readability */
-    }
-}
 .search-bar:hover{
     cursor: text;
 }
@@ -104,7 +97,7 @@ main{
 .menu-btn:hover{
     cursor: pointer;
 }
-
+*/
 
   /*Style to get rid of the shadow behind the picture*/
   .logo {
@@ -124,10 +117,6 @@ main{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/*Headline size*/
-.headline1{
-    font-size: 45px;
-}
 
 /* Styles for the placement of the small-box conatiners */
 .small-box-container {
@@ -422,8 +411,8 @@ main{
 /*Valentina's ends*/
 
 /*Studieoppbygging*/
-/*Miriam's section for studystructure-table*/
-#miriam, #studie-section{
+/*Section for studystructure-table*/
+#studieoppbygging-main, #studie-section{
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -613,7 +602,7 @@ main{
     color: black;
 }
 
-/*Miriam's part ends */
+/*Study-section ends */
 
 /*Mahder's new part: "dette er du kanskje interrest i"*/
 
