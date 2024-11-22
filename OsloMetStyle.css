@@ -18,9 +18,7 @@ main{
     justify-content: center;
     max-width: 100%;
 }
-.home-main iframe{
-    max-width: 100%;
-}
+  
 
 
 /*Navigationbar*/
@@ -50,7 +48,7 @@ main{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    margin: 0 15px;
+    margin: auto;
     padding: 5px 10px;
 }
 
@@ -133,7 +131,7 @@ main{
     padding: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-/*Centers for heading 2, "Nøkkelinformasjon"*/
+/*"Nøkkelinformasjon"*/
 .headline2 {
     text-align: center;
 }
@@ -156,7 +154,7 @@ main{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/*Centers heading 3 "Hva lærer du?"*/
+/*"Hva lærer du?"*/
 .headline3 { 
     text-align: center; 
 }
@@ -375,12 +373,12 @@ main{
     display: flex; 
     align-items: flex-start; 
     justify-content: center; 
-    gap: 20px; //* Adjusts space between image and text */
+    gap: 80px; //* Adjusts space between image and text */
 }
 
 /*Positions image*/
 .image-spå img { 
-    position: relative; 
+    display: flex; 
     left: 70px;
 }
 
@@ -394,21 +392,19 @@ main{
     border-radius: 10px; 
     text-decoration: none;
     cursor: pointer; /* Changes cursor to a hand when hovering over the button */
+    display: flex;
 }
 /*Valentina's ends*/
 
 /*Studieoppbygging*/
 /*Miriam's section for studystructure-table*/
-.miriam{
+#miriam, #studie-section{
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
 }
-
-.miriam h1{
-    text-align: center;
-    font-size: xx-large;
-}
 /*Subheading in parentcontainers*/
-.studieår{
+.studieår, h1{
     text-align: center;
     font-size: x-large;
 }
@@ -419,11 +415,32 @@ main{
 }
 
 
+.studie-button{
+    align-self: center;
+    background-color:rgb(183, 224, 250);
+    width: 200px;
+    height: 90;
+    padding: 20px;
+    border-radius: 20px;
+    border: 5px solid rgb(128, 158, 168);
+    transition: 0.5s;
+}
+
+.studie-button:hover{
+    width: 220px;
+    height: 100;
+    font-size: medium;
+    background-color:rgb(211, 238, 255);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+}
+
+
 /*Positions id item to default, with ability to adjust placement properties*/
 #stjerne{
     position: relative;
 }
-/*Adds content and positioning at the top right corner of some items*/
+/*Adds content and positioning at the top right corner of items*/
 #stjerne::after{
     content: "*";
     position: absolute;
@@ -435,7 +452,7 @@ main{
 /*Grid placement and styling of info at bottom of parentcontainers*/
 .valgfrittemne{
     grid-column: 4;
-    grid-row: 6;
+    grid-row: 7;
     text-align: end;
     font-weight: bold;
 }
@@ -444,7 +461,7 @@ main{
     margin-top: 20px;
     margin-bottom: 10px;
     padding:5px;
-    background-color: rgb(216, 234, 240);
+    background-color: #fbfeff; 
     font-size: large;
     font-weight: bold;
     margin-right: 5px;
@@ -455,12 +472,12 @@ main{
     margin-top: 20px;
     margin-bottom: 10px;
     padding:5px;
-    background-color: rgb(216, 234, 240)
+    background-color: #f1faff; 
 
 }
 /*Styling of classcodes*/
 .emnekode{
-    background-color: rgb(216, 234, 240);
+    background-color: rgb(203, 227, 235);
     text-align: end;
     font-size: small;
 }
@@ -473,7 +490,8 @@ main{
     border: 10px solid rgb(128, 158, 168);
     padding: 20px 10px;
     margin: 20px auto;
-    border-radius: 5px;
+    border-radius: 20px;
+    
 }
 
 .studie-parentcontainer1{
@@ -483,7 +501,7 @@ main{
 /*Creates 2 grid templates with automated properties*/
 .studie-parentcontainer2, .studie-parentcontainer3{
     grid-auto-columns: auto; /*4 columns*/
-    grid-auto-rows: auto; /*6 rows*/
+    grid-auto-rows: auto; /*7 rows*/
 }
 /*Creates grid templates within childrencontainers*/
 .studie-container{
@@ -558,10 +576,16 @@ main{
     padding: 15px 10px;
     margin: 1px;
     font-size: large;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+.studie-item:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .studie-item a{
     color: black;
 }
+
 /*Miriam's part ends */
 
 /*Mahder's new part: "dette er du kanskje interrest i"*/
@@ -743,24 +767,17 @@ main{
 }
 
 /* Add some space below the centered content */
-  .center-first-contet{
+.center-first-contet{
     margin-bottom: 20px; 
   }
 
   /* Posistions the texts beside each other, and style for container*/
-  .footer-container {
+  *.footer-container {
     display: flex;
     flex-direction: column;
     align-items: center; 
     margin: 0 auto; 
   }
-
-    /*Style for positioning the links*/
-    .footer-p, .m-footer-links, .footer-social {
-        width: 100%; 
-        max-width: 800px; 
-        margin: 0 auto; 
-    }
       
       .m-footer-links {
         list-style: none; 
@@ -773,7 +790,7 @@ main{
 
       /*Space between text*/
       .m-footer-link {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
       }
       
       /*Style for links*/
@@ -786,21 +803,16 @@ main{
         text-decoration: underline;
       }
       
-      /*Style and position for social links*/
-      .footer-social {
-        display: flex;
-        flex-direction: column;
-        gap: 10px; 
-      }
-      
       .m-footer-social-link {
         color: black;
         text-decoration: none;
       }
       
+      
       .m-footer-social-link:hover {
         text-decoration: underline;
       }
+
       /*"Media Queries: Adjust layout for larger screens, aligning content in a row and ensuring proper spacing." Source: Co-Pilot*/
       @media (min-width: 600px) {
         .footer-container {
@@ -848,12 +860,30 @@ compliance may appear even if the automated test gives an All clear-verdict*/
 }
 
 .accessibility-info{
-    background-color: rgb(193, 240, 255);/*Bytter bakgrunnsfarge senere til lik index*/
+    background-color: #d4eeff;/*Bytter bakgrunnsfarge senere til lik index*/
     padding: 20px;
 }
 
 .accessibility-info li{
     padding: 5px;
+}
+
+.footer-Accessibility {
+    background-color: #c1e7ff;
+    color: rgb(0, 0, 0); 
+    text-align: center; 
+    padding: 20px 0; 
+    max-width: auto;
+    margin: 0;
+}
+.footer-button { /*Button class*/
+    padding: 10px 20px; /* Padding around the button text */
+    font-size: 16px; /* Font size of the button text */
+    color: rgb(0, 0, 0); 
+    background-color: #608ba3; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; /* Changes cursor to a hand when hovering over the button */
 }
 
 
@@ -874,13 +904,39 @@ repository.*/
     background-color: #d4eeff;
     padding: 20px;
 }
+
+.figures {
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+  }
+  
+  .row { 
+    display: flex; 
+    gap: 20px; 
+  }
+  
+  .figure { 
+    flex: 1; 
+    text-align: center; 
+  }
+  
+  .figure img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .list {
+    margin-bottom: 15px;
+  }
+  
+
 .footer-github {
     background-color: #c1e7ff;
     color: rgb(0, 0, 0); 
     text-align: center; 
     padding: 20px 0; 
     max-width: auto;
-    position: static; /*don't move*/
     margin: 0;
 }
 .footer-button { /*Button class*/
@@ -891,19 +947,6 @@ repository.*/
     border: none; 
     border-radius: 10px; 
     cursor: pointer; /* Changes cursor to a hand when hovering over the button */
-}
-.figures {
-    display: flex; 
-    justify-content: space-between; /* Adjust as needed */ 
-    gap: 20px; /* Space between images */
-}
-.row { 
-    display: flex; 
-    gap: 20px; /* Avstand mellom bildene i samme rad */ 
-}
-.figure { 
-    flex: 1; /* Gir hver bilde lik bredde */ 
-    height: auto; /* Bevarer bilde proporsjonene */ 
 }
 
 
