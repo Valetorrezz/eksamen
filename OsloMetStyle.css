@@ -657,17 +657,17 @@ main{
   /*part ends*/
 
 /*Ari's del: tyle for "Fagligleder"*/
-.AriSinDel h2 {
+.section-FAQ-kursleder h2 {
     font-size: 24px;
     color: black;
 }
   
-  .AriSinDel p {
+  .section-FAQ-kursleder p {
     font-size: 16px;
     color: black;
 }
   
-  .AriSinDel-kursleder {
+  .section-FAQ-kursleder-kursleder {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -678,41 +678,41 @@ main{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
   
-  .AriSinDel-profil {
+  .section-FAQ-kursleder-profil {
     display: flex;
     align-items: center;
     gap: 15px;
 }
   
-  .AriSinDel-profil img {
+  .section-FAQ-kursleder-profil img {
     width: 130px;
     height: 170px;
     box-shadow: 0 4px 8px rgb(138, 149, 245);
 }
   
-  .AriSinDel-profil-info h3 {
+  .section-FAQ-kursleder-profil-info h3 {
     margin: 0;
     font-size: 20px;
     color: #070202;
 }
   
-  .AriSinDel-profil-info p {
+  .section-FAQ-kursleder-profil-info p {
     margin: 5px 0;
     color: #0a0a0c;
 }
   
-  .AriSinDel-profil-info a {
+  .section-FAQ-kursleder-profil-info a {
     color: #060606;
     text-decoration: none;
 }
   
-  .AriSinDel-profil-info a:hover {
+  .section-FAQ-kursleder-profil-info a:hover {
     text-decoration: underline;
 }
 
 /*Ari's part: Style for "Spørsmål om utdanningen?" section*/
 /*Style for background conatiner*/
-.AriSinDel {
+.section-FAQ-kursleder {
     text-align: center;
     padding: 20px;
     background-color: #c1e7ff;
@@ -722,19 +722,19 @@ main{
     box-shadow: 0 4px 8px rgba(58, 157, 238, 0.1);
   }
   /*Style for headings*/
-  .AriSinDel h2 {
+  .section-FAQ-kursleder h2 {
     font-size: 24px;
     color: black;
   }
   
   /*Style for paragrphs*/
-  .AriSinDel p {
+  .section-FAQ-kursleder p {
     font-size: 16px;
     color: black;
   }
   
 /*Style for the small container*/
-  .AriSinDel-kursleder {
+  .section-FAQ-kursleder-kursleder {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -745,38 +745,38 @@ main{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  .AriSinDel-profil {
+  .section-FAQ-kursleder-profil {
     display: flex;
     align-items: center;
     gap: 15px;
   }
   
-  .AriSinDel-profil img {
+  .section-FAQ-kursleder-profil img {
     width: 130px;
     height: 170px;
     box-shadow: 0 4px 8px rgb(172, 207, 255);
   }
   
   /*Style for heading inside small container*/
-  .AriSinDel-profil-info h3 {
+  .section-FAQ-kursleder-profil-info h3 {
     margin: 0;
     font-size: 20px;
     color: #070202;
   }
   
   /*Style for pargraph inside the small container*/
-  .AriSinDel-profil-info p {
+  .section-FAQ-kursleder-profil-info p {
     margin: 5px 0;
     color: #0a0a0c;
   }
   
   /*Styles for mail link*/
-  .AriSinDel-profil-info a {
+  .section-FAQ-kursleder-profil-info a {
     color: #060606;
     text-decoration: none;
   }
   
-  .AriSinDel-profil-info a:hover {
+  .section-FAQ-kursleder-profil-info a:hover {
     text-decoration: underline;
   }
   /*Ari's part ends*/
