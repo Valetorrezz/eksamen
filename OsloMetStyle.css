@@ -365,7 +365,7 @@ main{
 
 /*Studieoppbygging*/
 /*Miriam's section for studystructure-table*/
-.miriam, #studie-section{
+#miriam, #studie-section{
     display: flex;
     flex-direction: column;
     max-width: 100%;
