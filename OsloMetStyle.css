@@ -331,9 +331,9 @@ main{
 /*Mahder's part ends*/
 
 
-/* mia's part: Style for "Hva kan du jobbe som?" , "Videre studiemuligheter" and "Utveksling" section*/
+/* Style for "Hva kan du jobbe som?" , "Videre studiemuligheter" and "Utveksling" section*/
 /*Style for text boxes*/
-.miaspart {
+.jobandopportunities {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -374,7 +374,7 @@ main{
     color: #555;
     margin: 0;
 }
-/* mia's part ends */
+/* Style for "Hva kan du jobbe som?" , "Videre studiemuligheter" and "Utveksling" section ends */
 
 /*Valentina's part: Style for "Studenthistorier*/  
 /*Style for conatiner*/
@@ -433,6 +433,8 @@ main{
     text-align: center;
     font-size: x-large;
 }
+
+
 /*Subheading in parentcontainer2 and 3 stretches across 1st row*/
 .år2, .år3{
     grid-column: 1 / span 4; 
