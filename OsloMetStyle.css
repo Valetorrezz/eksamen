@@ -71,7 +71,7 @@ main{
 }
 
 /* Editing the search and menu bar */
-/*.nav-right {
+.nav-right {
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -85,6 +85,13 @@ main{
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+@media (max-width: 768px) {
+    .search-bar {
+      width: 80px; /* Shrink width on smaller screens */
+      height: 15px; /* Adjust height */
+      font-size: 12px; /* Reduce font size for readability */
+    }
+}
 .search-bar:hover{
     cursor: text;
 }
@@ -97,7 +104,7 @@ main{
 .menu-btn:hover{
     cursor: pointer;
 }
-*/
+
 
   /*Style to get rid of the shadow behind the picture*/
   .logo {
