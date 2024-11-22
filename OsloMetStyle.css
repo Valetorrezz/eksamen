@@ -7,9 +7,12 @@ body{
     padding: 0;
     margin:0;
 }
+h1{
+    font-size: xx-large;
+}
 
 
-/*Main Container: Adds margin around main content, centers the video*/
+/*Main Container: Adds margin around main content, centers it in a column*/
 main{
     margin: 20px;
     display: flex;
@@ -18,10 +21,10 @@ main{
     justify-content: center;
     max-width: 100%;
 }
+/*positions the video container relative and 100% of the main container*/
 .video-main{
     position: relative;
-    width: 100%; /* Tar hele bredden til foreldreelementet */
-    height: 0;
+    width: 100%; 
     padding-bottom: 50%;
 }
 .video-main iframe{
@@ -214,7 +217,7 @@ main{
     border-right: 2px solid black;
 }
 
-.left-side h1{
+.left-side h2{
     font-size: 24px;
     margin-bottom: 15px;
 }
@@ -236,7 +239,7 @@ main{
     padding: 20px;
 }
 
-.right-side h1{
+.right-side h2{
     font-size: 24px;
     margin-bottom: 15px;
     margin-left: 15px;
@@ -274,7 +277,7 @@ main{
 }
 
 /*Style for left heading*/
-.side-content-section h1 {
+.side-content-section h2 {
     font-size: 24px;
     margin-bottom: 15px;
     color: white;
@@ -302,7 +305,7 @@ main{
 }
 
 /*Style for right side heading*/
-.side-content h1 {
+.side-content h2 {
     font-size: 24px;
     margin-bottom: 15px;
     margin-left: 15px;
@@ -416,8 +419,8 @@ main{
     flex-direction: column;
     max-width: 100%;
 }
-#studieoppbygging-main h1{
-    font-size: xx-large;
+#studieoppbygging-main h2{
+    font-size: x-large;
     align-self: center;
 
 }
@@ -621,7 +624,7 @@ main{
     border-radius: 8px;
   }
   
-  .field-container h1 {
+  .field-container h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
     color: #333;
@@ -926,6 +929,9 @@ repository.*/
     background-color: #d4eeff;
     padding: 20px;
 }
+.github-main h1{
+    text-align: center;
+}
 
 .figures {
     display: flex; 
@@ -1095,13 +1101,6 @@ repository.*/
 .overskrift3-A {
     font-size: 40px;
     text-align: center;
-}
-
-/*Subtitle*/
-h2 {
-    color: #333;
-    font-size: 28px;
-    margin-top: 20px;
 }
 
 
