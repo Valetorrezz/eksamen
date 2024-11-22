@@ -577,9 +577,9 @@ main{
   
   .field {
       padding: 15px;
-      border: 1px solid #ddd;
+      border: 1px solid #bfbfbf;
       border-radius: 8px;
-      background-color: #f9f9f9;
+      background-color: #e0f7ff;
   }
   
   .field h2 {
