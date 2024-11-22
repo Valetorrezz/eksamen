@@ -850,13 +850,39 @@ repository.*/
     background-color: #d4eeff;
     padding: 20px;
 }
+
+.figures {
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+  }
+  
+  .row { 
+    display: flex; 
+    gap: 20px; 
+  }
+  
+  .figure { 
+    flex: 1; 
+    text-align: center; 
+  }
+  
+  .figure img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .list {
+    margin-bottom: 15px;
+  }
+  
+
 .footer-github {
     background-color: #c1e7ff;
     color: rgb(0, 0, 0); 
     text-align: center; 
     padding: 20px 0; 
     max-width: auto;
-    position: static; /*don't move*/
     margin: 0;
 }
 .footer-button { /*Button class*/
@@ -867,19 +893,6 @@ repository.*/
     border: none; 
     border-radius: 10px; 
     cursor: pointer; /* Changes cursor to a hand when hovering over the button */
-}
-.figures {
-    display: flex; 
-    justify-content: space-between; /* Adjust as needed */ 
-    gap: 20px; /* Space between images */
-}
-.row { 
-    display: flex; 
-    gap: 20px; /* Avstand mellom bildene i samme rad */ 
-}
-.figure { 
-    flex: 1; /* Gir hver bilde lik bredde */ 
-    height: auto; /* Bevarer bilde proporsjonene */ 
 }
 
 
