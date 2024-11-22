@@ -75,6 +75,13 @@ main{
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+@media (max-width: 768px) {
+    .search-bar {
+      width: 80px; /* Shrink width on smaller screens */
+      height: 12px; /* Adjust height */
+      font-size: 12px; /* Reduce font size for readability */
+    }
+}
 
 .menu-btn {
     background-color: transparent;
