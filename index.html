@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="OsloMetStyle.css">
 </head>
 
-<body>
+<body id="home-body-id">
   <header> 
     <!--Navigationbar-->
     <nav class="navbar">
@@ -44,21 +44,21 @@
     </section>
     
     <!--Nøkkelinfomrasjon-->
-    <h2 class="headline2"> Nøkkelinformasjon </h1>
-      <section class="container">
+    <h2 class="headline2"> Nøkkelinformasjon </h2>
+    <section class="container">
       <p class="box"><b>Studiested</b> <br> Pilestredet i Oslo </p>
       <p class="box"><b>Studiestart</b><br>August</p>
       <p class="box"><b>Studiepoeng</b><br>180</p>
       <p class="box"><b>Omfang</b><br>Heltid</p>
       <p class="box"><b>Undervisningsspråk</b><br>Norsk<br>Engelsk</p>
       <p class="box"><b>Studieplasser</b><br>40</p>
-      </section>
+    </section>
 
-      <!--Hva lærer du?-->
+    <!--Hva lærer du?-->
     <section class="content"> 
       <article class="content-wrapper"> <!--bruker Flexbox for å plassere bilde og tekst ved siden av hverandre.-->
-        <article class="text-container"> 
-          <h2 class="headline3">Hva lærer du?</h1>
+        <div class="text-container"> 
+          <h2 class="headline3">Hva lærer du?</h2>
           <p>Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk, informatikk, fysikk og statistikk.  
           
               Du får innsikt i matematiske modeller som brukes i praktisk problemløsning blant annet i medisinsk kjemi, biologiske prosesser og ulike samfunnssystemer. 
@@ -68,12 +68,13 @@
               Det siste semesteret skriver du en bacheloroppgave tett knyttet til problemstillinger i arbeidslivet.
               
               Første året velger du hvilken av disse spesialiseringene du vil ta.</p>
-        </article>
+          </div>
+      </article>
     </section>
 <!--Opptakskrav og poeng, Slik søker du-->
     <div class="first-wrapper">
       <div class="left-side">
-        <h1 class="left-title">Opptakskrav og poeng</h1>
+        <h2 class="left-title">Opptakskrav og poeng</h2>
         <p>For å søke på dette programmet må du ha</p>
         <ul>
           <li>
@@ -88,7 +89,7 @@
       </div> 
 
       <div class="right-side">
-        <h1 class="right-title">Slik søker du</h1>
+        <h2 class="right-title">Slik søker du</h2>
         <p>Du søker på Samordna opptak med studiekode 215 503.</p>
         <ul>
           <li>15. april: ordinær søknadsfrist</li><br>
@@ -100,13 +101,13 @@
     </div>
 
     <!--Studieoppbyggning-->
-    <section id="miriam">
-      <h1>Studieoppbygging</h1>
-      <button type="button" class="studie-button" id="studie-button1" onclick="myFunction()"> Trykk for å åpne studieoppbygging </button>
+    <section id="studieoppbygging-section">
+      <h2>Studieoppbygging</h2>
+      <button type="button" class="studie-button" id="studie-button1" onclick="studieÅpneLukk()"> Trykk for å åpne studieoppbygging </button>
       <section id="studie-section" style="display: none;">
       
           <div class="studie-parentcontainer studie-parentcontainer1"> 
-              <h2 class="studieår år1">1. Studieår</h2>
+              <h3 class="studieår år1">1. Studieår</h3>
                   <p class="sem sem1"> 1. Semester</p>
 
                   <div class="studie-container studie-container1">
@@ -147,7 +148,7 @@
           </div>
 
           <div class="studie-parentcontainer studie-parentcontainer2"> 
-              <h2 class="studieår år2">2. Studieår </h2>
+              <h3 class="studieår år2">2. Studieår </h3>
               <p class="valgfrittemne"> * = Valgfritt emne</p>
 
               <p class="sem sem3"> 3. Semester</p>
@@ -231,7 +232,7 @@
           </div>
 
           <div class="studie-parentcontainer studie-parentcontainer3"> 
-              <h2 class="studieår år3">3. Studieår</h2>             
+              <h3 class="studieår år3">3. Studieår</h3>             
               <p class="valgfrittemne"> * = Valgfritt emne</p>
 
               <p class="sem sem5"> 5. Semester</p>
@@ -374,14 +375,14 @@
                   </div>
               </div>
           </div>
-          <button type="button" class="studie-button" id="studie-button2" onclick="myFunction2()"> Trykk for å scrolle tilbake </button>
+          <button type="button" class="studie-button" id="studie-button2" onclick="studieScrollTilTopp()"> Trykk for å scrolle tilbake </button>
       </section>
     </section>
         
     <!--Hvordan foregår undervisningen?-->
     <section class="wrapper">
-      <article class="mahder1">
-        <h1 class="firstTitle">Hvordan foregår undervisningen?</h1>
+      <article class="side-content-section">
+        <h2 class="firstTitle">Hvordan foregår undervisningen?</h2>
         <p>Undervisningen er en kombinasjon av</p>
         <ul>
           <li>prosjektarbeid</li> <br>
@@ -400,7 +401,7 @@
       </article>
       <!--Hva koster det?-->
       <section class="side-content">
-        <h1>Hva koster det?</h1> <br>
+        <h2>Hva koster det?</h2> <br>
         <p> Du betaler en semesteravgift hvert semester (student.oslomet.no).<a href="https://student.oslomet.no/semesteravgift" style="text-decoration: underline;"> Les mer...</a></p>
         <p>Er du internasjonal student fra utenfor EU og EØS, må du betale studieavgift (student.oslomet.no). <a href="https://student.oslomet.no/studieavgift-for-internasjonale-studenter-utenfor-eu-eos" style="text-decoration: underline;"> (Les mer). </a> Det er mulig 
           å søke om unntak for betaling av denne studieavgiften.</p>
@@ -408,7 +409,7 @@
     </section>
 
       <!--Hva kan du jobbe som?-->
-    <section class="miaspart">
+    <section class="jobandopportunities">
       <section class="backgroud">
         <article class="firstbox">
           <h2 class="headlinefirstpage" style="font-size: 28px;">Hva kan du jobbe som?</h2>
@@ -449,20 +450,20 @@
     <!--Studenthistorier-->
     <section class="studenthistorier"> 
       <article class="content-wrapper"> <!--bruker Flexbox for å plassere bilde og tekst ved siden av hverandre.-->
-        <article class="text-container"> 
+        <div class="text-container"> 
           <h2 class="headline4">Studenthistorier</h2>
           <p class="left"><b>Spå fremtiden med matematikk og datavitenskap </b><br> Har du lyst til å finne ut av hva som skal skje i fremtiden? Lær å bruk verktøy for å forutsi alt fra været og strømpriser til utviklingen av boligmarkedet.</p>
           <a href="https://www.oslomet.no/studier/studenthistorier" class="student-button">Flere studenthistorier</a>
-        </article>
-        <article class="image-spå"> <!--holder teksten og sørger for at den er venstrejustert.--> 
+        </div>
+        <div class="image-spå"> <!--holder teksten og sørger for at den er venstrejustert.--> 
           <img src="spå.jpg" alt="Logo"> 
-        </article>
+        </div>
       </article>
     </section>
 
     <!-- Dette er du kanskje interresert i -->
     <div class="field-container">
-      <h1>Du er kanskje også interessert i disse?</h1>
+      <h2>Du er kanskje også interessert i disse?</h2>
       <div class="field-list">
         <div class="field">
           <h2> <a href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi">Anvendt datateknologi</a></h2>
@@ -520,10 +521,12 @@
             <p>Kursleder</p>
             <p>+47 672 37 240</p>
             <p><a href="mailto:kristoffer.hellton@oslomet.no">kristoffer.hellton@oslomet.no</a></p>
-          </article>
-        </article>
+          </div>
+        </div>
       </article>
     </section>
+
+    <button type="button" class="home-scroll-top" id="scrolltop-button" onclick="homeScrollTilTop()"> <b>Til toppen </b></button>
   </main> 
 
   <!--Footer-->
@@ -612,7 +615,7 @@
 </section>
   </footer>
   <script>
-    function myFunction() {
+    function studieÅpneLukk() {
       var x = document.getElementById("studie-section");
       var y = document.getElementById("studie-button1");
       if (x.style.display === "none") {
@@ -625,10 +628,17 @@
     }
 
     }
-    function myFunction2() {
-      const element = document.getElementById("miriam");
+    function studieScrollTilTopp() {
+      const element = document.getElementById("studieoppbygging-section");
       element.scrollIntoView({behavior:"smooth"});
     }
+    function homeScrollTilTop() {
+      const element = document.getElementById("home-body-id");
+      element.scrollIntoView({behavior:"smooth"});
+    }
+    
+
+
   </script>
     
 </body>

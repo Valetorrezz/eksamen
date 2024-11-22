@@ -7,9 +7,12 @@ body{
     padding: 0;
     margin:0;
 }
+h1{
+    font-size: xx-large;
+}
 
 
-/*Main Container: Adds margin around main content, centers the video*/
+/*Main Container: Adds margin around main content, centers it in a column*/
 main{
     margin: 20px;
     display: flex;
@@ -18,22 +21,21 @@ main{
     justify-content: center;
     max-width: 100%;
 }
+/*positions the video container relative and to 100% of the main parentcontainer*/
 .video-main{
     position: relative;
-    width: 100%; /* Tar hele bredden til foreldreelementet */
-    height: 0;
-    padding-bottom: 50%;
+    width: 100%; 
+    aspect-ratio: 16/9; /*Defines width to height ratio*/
 }
+/*Positions the video relative to the video-main container, and 100% of its size*/
 .video-main iframe{
-    position: absolute;
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     border: 0;
 }
-
-  
 
 
 /*Navigationbar*/
@@ -57,7 +59,6 @@ main{
 .navbar a {
     color: rgb(0, 0, 0);
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
     margin: auto;
     padding: 5px 10px;
@@ -66,8 +67,8 @@ main{
 /* Hover effect for navigation bar links */
   .navbar a:hover {
     background-color: rgb(211, 238, 255);
+    padding: 10px;
     border-radius: 5px;
-    text-decoration: underline;
 }
 
 /* Editing the search and menu bar */
@@ -84,13 +85,6 @@ main{
     margin-right: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-}
-@media (max-width: 768px) {
-    .search-bar {
-      width: 80px; /* Shrink width on smaller screens */
-      height: 15px; /* Adjust height */
-      font-size: 12px; /* Reduce font size for readability */
-    }
 }
 .search-bar:hover{
     cursor: text;
@@ -111,7 +105,7 @@ main{
     box-shadow: none;
 }
 
-  /*Valentina's part: Style for "Matematisk modellering", "Nøkkeltall", "Hva lærer du?" sections*/
+  /*Style for "Matematisk modellering", "Nøkkeltall", "Hva lærer du?" sections*/
 /* Styles for the headline section, the first light-blue container */
 .headline { 
     padding-top: 5em;
@@ -124,10 +118,6 @@ main{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/*Headline size*/
-.headline1{
-    font-size: 45px;
-}
 
 /* Styles for the placement of the small-box conatiners */
 .small-box-container {
@@ -204,9 +194,8 @@ main{
     text-align: left; /* Left-aligns text */
     max-width: 50%; /* Adjust width as needed */
 } 
-/*Valentina's part ends*/
 
-/*Mahder's part "opptakskrav og poeng, slik søker du"*/
+/* "opptakskrav og poeng, slik søker du"*/
 .first-wrapper{
     display:flex;
     max-width: 1200px;
@@ -226,7 +215,7 @@ main{
     border-right: 2px solid black;
 }
 
-.left-side h1{
+.left-side h2{
     font-size: 24px;
     margin-bottom: 15px;
 }
@@ -248,7 +237,7 @@ main{
     padding: 20px;
 }
 
-.right-side h1{
+.right-side h2{
     font-size: 24px;
     margin-bottom: 15px;
     margin-left: 15px;
@@ -265,7 +254,7 @@ main{
 /*Part ends*/
 
 
-/*Mahder's part 1: Style for the "Hvordan foregår undervisning" and "Hva koster det" section*/
+/*Style for the "Hvordan foregår undervisning" and "Hva koster det" section*/
 /*Style for the container*/
 .wrapper {
     display:flex;
@@ -275,31 +264,31 @@ main{
     margin-top: 20px;
 }
 
-.mahder1, .side-content {
+.side-content-section, .side-content {
     flex: 1;
     padding: 20px;
     color: white;
 }
 
-.mahder1 {
+.side-content-section {
     border-right: 2px solid white;
 }
 
 /*Style for left heading*/
-.mahder1 h1 {
+.side-content-section h2 {
     font-size: 24px;
     margin-bottom: 15px;
     color: white;
 }
 
 /*Style for left paragraph*/
-.mahder1 p {
+.side-content-section p {
     color:white;
     margin-bottom: 20px;
 }
 
 /*Style for list/points*/
-.mahder1 ul { 
+.side-content-section ul { 
     list-style-type: disc;
     padding-left: 20px;
     color: white;
@@ -314,7 +303,7 @@ main{
 }
 
 /*Style for right side heading*/
-.side-content h1 {
+.side-content h2 {
     font-size: 24px;
     margin-bottom: 15px;
     margin-left: 15px;
@@ -328,12 +317,12 @@ main{
     margin-left: 20px;
     list-style-type: disc;
 }
-/*Mahder's part ends*/
+/*Part ends*/
 
 
-/* mia's part: Style for "Hva kan du jobbe som?" , "Videre studiemuligheter" and "Utveksling" section*/
+/* Style for "Hva kan du jobbe som?" , "Videre studiemuligheter" and "Utveksling" section*/
 /*Style for text boxes*/
-.miaspart {
+.jobandopportunities {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -348,7 +337,7 @@ main{
     
 }
 @media (max-width: 760px) {
-    .miaspart {
+    .jobandopportunities {
         flex-direction: column;
     }
 }
@@ -374,9 +363,9 @@ main{
     color: #555;
     margin: 0;
 }
-/* mia's part ends */
+/* Style for "Hva kan du jobbe som?" , "Videre studiemuligheter" and "Utveksling" section ends */
 
-/*Valentina's part: Style for "Studenthistorier*/  
+/*Style for "Studenthistorier*/  
 /*Style for conatiner*/
 .studenthistorier{
     padding-top: 5em;
@@ -419,42 +408,53 @@ main{
     cursor: pointer; /* Changes cursor to a hand when hovering over the button */
     display: flex;
 }
-/*Valentina's ends*/
+/*Part ends*/
 
-/*Studieoppbygging*/
-/*Miriam's section for studystructure-table*/
-#miriam, #studie-section{
+
+/*Section for studystructure-table*/
+
+/*Flexcontainer to align elements*/
+#studieoppbygging-section{
     display: flex;
     flex-direction: column;
     max-width: 100%;
 }
+
+#studieoppbygging-section h2{
+    align-self: center;
+}
 /*Subheading in parentcontainers*/
-.studieår, h1{
+.studieår{
     text-align: center;
     font-size: x-large;
 }
+
+
 /*Subheading in parentcontainer2 and 3 stretches across 1st row*/
 .år2, .år3{
     grid-column: 1 / span 4; 
     grid-row: 1;       
 }
 
-
+/*Styling the buttons in studieoppbygging-section and studie-section*/
 .studie-button{
     align-self: center;
     background-color:rgb(183, 224, 250);
-    width: 200px;
-    height: 90;
+    width: 260px;
+    height: 90px;
     padding: 20px;
     border-radius: 20px;
     border: 5px solid rgb(128, 158, 168);
-    transition: 0.5s;
+    font-size: medium;
+    font-weight: bold;
+    transition: 0.5s; /*Fast transition when hovered*/
 }
 
+/*Changes size, background color and gives a box-shadow when hovered*/
 .studie-button:hover{
-    width: 220px;
-    height: 100;
-    font-size: medium;
+    width: 280px; 
+    height: 100px;
+    font-size: large;
     background-color:rgb(211, 238, 255);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     cursor: pointer;
@@ -516,7 +516,7 @@ main{
     padding: 20px 10px;
     margin: 20px auto;
     border-radius: 20px;
-    
+
 }
 
 .studie-parentcontainer1{
@@ -526,7 +526,7 @@ main{
 /*Creates 2 grid templates with automated properties*/
 .studie-parentcontainer2, .studie-parentcontainer3{
     grid-auto-columns: auto; /*4 columns*/
-    grid-auto-rows: auto; /*7 rows*/
+    grid-auto-rows: auto; /*6 rows*/
 }
 /*Creates grid templates within childrencontainers*/
 .studie-container{
@@ -604,6 +604,7 @@ main{
     transition-duration: 0.5s;
     border-radius: 10px;
 }
+/*Creates a low opacity, dimensioned shadow*/
 .studie-item:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -611,9 +612,9 @@ main{
     color: black;
 }
 
-/*Miriam's part ends */
+/*Study-section ends */
 
-/*Mahder's new part: "dette er du kanskje interrest i"*/
+/*"Du er kanskje også interessert i disse"*/
 
 .field-container {
     max-width: 600px;
@@ -624,7 +625,7 @@ main{
     border-radius: 8px;
   }
   
-  .field-container h1 {
+  .field-container h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
     color: #333;
@@ -641,6 +642,12 @@ main{
       border: 1px solid #ddd;
       border-radius: 8px;
       background-color: #f9f9f9;
+      transition-duration: 0.5s;
+
+
+  }
+  .field:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   
   .field h2 {
@@ -654,9 +661,9 @@ main{
       color: #555;
       margin: 0;
   }
-  /*part ends*/
+/*part ends*/
 
-/*Ari's del: tyle for "Fagligleder"*/
+/*Style for "Fagligleder"*/
 .section-FAQ-kursleder h2 {
     font-size: 24px;
     color: black;
@@ -779,7 +786,7 @@ main{
   .section-FAQ-kursleder-profil-info a:hover {
     text-decoration: underline;
   }
-  /*Ari's part ends*/
+  /*part ends*/
 
 
   /*Footer for home-page*/
@@ -853,10 +860,12 @@ main{
           flex-direction: row; /* Align social links in a row */
         }
       }
+
+
       
 
 /*Style for button*/
-  .footer-button { /*Button class*/
+  .footer-button, .home-scroll-top { /*Button class*/
     padding: 10px 20px; /* Padding around the button text */
     font-size: 16px; /* Font size of the button text */
     color: rgb(0, 0, 0); 
@@ -928,6 +937,9 @@ repository.*/
 .github-container {
     background-color: #d4eeff;
     padding: 20px;
+}
+.github-main h1{
+    text-align: center;
 }
 
 .figures {
@@ -1098,13 +1110,6 @@ repository.*/
 .overskrift3-A {
     font-size: 40px;
     text-align: center;
-}
-
-/*Subtitle*/
-h2 {
-    color: #333;
-    font-size: 28px;
-    margin-top: 20px;
 }
 
 
