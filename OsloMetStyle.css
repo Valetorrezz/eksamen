@@ -434,17 +434,19 @@ main{
 .studie-button{
     align-self: center;
     background-color:rgb(183, 224, 250);
-    width: 200px;
-    height: 90;
+    width: 260px;
+    height: 90px;
     padding: 20px;
     border-radius: 20px;
     border: 5px solid rgb(128, 158, 168);
+    font-size: medium;
+    font-weight: bold;
     transition: 0.5s;
 }
 
 .studie-button:hover{
-    width: 220px;
-    height: 100;
+    width: 280px;
+    height: 100px;
     font-size: medium;
     background-color:rgb(211, 238, 255);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
