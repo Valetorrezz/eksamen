@@ -327,6 +327,11 @@ main{
     margin-top: 40px;
     
 }
+@media (max-width: 760px) {
+    .miaspart {
+        flex-direction: column;
+    }
+}
 
 
 
