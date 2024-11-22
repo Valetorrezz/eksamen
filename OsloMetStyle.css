@@ -18,16 +18,37 @@ main{
     justify-content: center;
     max-width: 100%;
 }
+.video-main{
+    position: relative;
+    width: 100%; /* Tar hele bredden til foreldreelementet */
+    height: 0;
+    padding-bottom: 50%;
+}
+.video-main iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+  
 
 
 /*Navigationbar*/
 /* Styles for the navigation bar list */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #98d8ff;
+}
 .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 5px;
     background-color: #98d8ff;
-    /*width: 100%;*/
     display: flex;
     align-items: center;
 }
@@ -38,7 +59,7 @@ main{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    margin: 0 15px;
+    margin: auto;
     padding: 5px 10px;
 }
 
@@ -49,6 +70,42 @@ main{
     text-decoration: underline;
 }
 
+/* Editing the search and menu bar */
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding: 0;    
+    justify-content: right;
+}
+
+.search-bar {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+@media (max-width: 768px) {
+    .search-bar {
+      width: 80px; /* Shrink width on smaller screens */
+      height: 15px; /* Adjust height */
+      font-size: 12px; /* Reduce font size for readability */
+    }
+}
+.search-bar:hover{
+    cursor: text;
+}
+
+.menu-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+}
+.menu-btn:hover{
+    cursor: pointer;
+}
+
+
   /*Style to get rid of the shadow behind the picture*/
   .logo {
     box-shadow: none;
@@ -56,15 +113,13 @@ main{
 
   /*Valentina's part: Style for "Matematisk modellering", "Nøkkeltall", "Hva lærer du?" sections*/
 /* Styles for the headline section, the first light-blue container */
-  section.headline { 
+.headline { 
     padding-top: 5em;
     padding-bottom: 5em;
     text-align: center;
-    padding-right: 25%;
-    padding-left: 25%;
+    width: 100%;
     background-color: #c1e7ff;
     margin: 20px auto;
-    max-width: auto;
     border-radius: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -96,30 +151,30 @@ main{
     padding: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-/*Centers for heading 2, "Nøkkelinformasjon"*/
+/*"Nøkkelinformasjon"*/
 .headline2 {
     text-align: center;
 }
 
 /*Position for the light blue boxes*/
 .container {
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; /* Avstand mellom boksene */
-    margin: 0 auto; /*sentrer boksene i midten*/
-    padding: 40px;
+    display: flex; 
+    gap: 15px; /* Avstand mellom boksene */
+    flex-wrap: wrap;
+    margin: 0 25%;
 }
 
 /* Styles for all the light-blue boxes */
 .box {
+    flex:1;
     background-color: #c1e7ff;
-    padding: 20px;
+    padding: 40px;
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/*Centers heading 3 "Hva lærer du?"*/
+/*"Hva lærer du?"*/
 .headline3 { 
     text-align: center; 
 }
@@ -292,6 +347,11 @@ main{
     margin-top: 40px;
     
 }
+@media (max-width: 760px) {
+    .miaspart {
+        flex-direction: column;
+    }
+}
 
 
 
@@ -357,6 +417,7 @@ main{
     border-radius: 10px; 
     text-decoration: none;
     cursor: pointer; /* Changes cursor to a hand when hovering over the button */
+    display: flex;
 }
 /*Valentina's ends*/
 
@@ -372,6 +433,8 @@ main{
     text-align: center;
     font-size: x-large;
 }
+
+
 /*Subheading in parentcontainer2 and 3 stretches across 1st row*/
 .år2, .år3{
     grid-column: 1 / span 4; 
@@ -577,9 +640,9 @@ main{
   
   .field {
       padding: 15px;
-      border: 1px solid #bfbfbf;
+      border: 1px solid #ddd;
       border-radius: 8px;
-      background-color: #e0f7ff;
+      background-color: #f9f9f9;
   }
   
   .field h2 {
@@ -731,7 +794,7 @@ main{
 }
 
 /* Add some space below the centered content */
-  .center-first-contet{
+.center-first-contet{
     margin-bottom: 20px; 
   }
 
@@ -824,12 +887,30 @@ compliance may appear even if the automated test gives an All clear-verdict*/
 }
 
 .accessibility-info{
-    background-color: rgb(193, 240, 255);/*Bytter bakgrunnsfarge senere til lik index*/
+    background-color: #d4eeff;/*Bytter bakgrunnsfarge senere til lik index*/
     padding: 20px;
 }
 
 .accessibility-info li{
     padding: 5px;
+}
+
+.footer-Accessibility {
+    background-color: #c1e7ff;
+    color: rgb(0, 0, 0); 
+    text-align: center; 
+    padding: 20px 0; 
+    max-width: auto;
+    margin: 0;
+}
+.footer-button { /*Button class*/
+    padding: 10px 20px; /* Padding around the button text */
+    font-size: 16px; /* Font size of the button text */
+    color: rgb(0, 0, 0); 
+    background-color: #608ba3; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; /* Changes cursor to a hand when hovering over the button */
 }
 
 

@@ -11,20 +11,27 @@
 <body>
   <header> 
     <nav class="navbar">
-      <ul>
+      <ul class="nav-left">
         <img class="logo" src=https://kommunikasjon.ntb.no/data/images/00339/dcb25c97-e530-4d45-804e-4883a9a9ce9d.png alt="OsloMet logo med navn i svart skrift" width="100" height="70">
         <li><a href="index.html">Home</a></li>
         <li><a href="Accessibility.html">Accessibility</a></li>
         <li><a href="GitHub.html">GitHub</a></li>
         <li><a href="Activity.html">Activity</a></li>
       </ul>  
+
+      <ul class="nav-right">
+        <input type="text" class="search-bar" placeholder="Søk...">
+        <button class="menu-btn">☰</button>
+      </ul>
+      
     </nav>
   </header>
     <!--Hovedinnhold-->
   <main class="home-main">
     <!--Video-->
-    <iframe width="750" height="400" src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=95216483"></iframe>
-
+    <section class="video-main">
+      <iframe title="Studenter på Oslomet forteller om matematisk modellering og datavitenskap-ingeniør" src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=95216483" allowfullscreen></iframe>
+    </section>
     <!--Matematisk modellering og datavitenskap-ingeniør-->
     <section class="headline">
       <h1 class="text1"> Matematisk modellering og datavitenskap-ingeniør</h1>
@@ -46,6 +53,7 @@
       <p class="box"><b>Studieplasser</b><br>40</p>
       </section>
 
+      <!--Hva lærer du?-->
     <section class="content"> 
       <article class="content-wrapper"> <!--bruker Flexbox for å plassere bilde og tekst ved siden av hverandre.-->
         <article class="text-container"> 
