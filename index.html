@@ -91,7 +91,7 @@
     </div>
 
     <!--Studieoppbyggning-->
-    <section class="miriam">
+    <section id="miriam">
       <h1>Studieoppbygging</h1>
       <button type="button" class="studie-button" id="studie-button1" onclick="myFunction()"> Trykk for å åpne studieoppbygging </button>
       <section id="studie-section" style="display: none;">
@@ -365,7 +365,7 @@
                   </div>
               </div>
           </div>
-          <button type="button" class="studie-button" id="studie-button2" onclick="myFunction2()"> Trykk for å lukke studieoppbygging </button>
+          <button type="button" class="studie-button" id="studie-button2" onclick="myFunction2()"> Trykk for å scrolle tilbake </button>
       </section>
     </section>
         
@@ -617,14 +617,8 @@
 
     }
     function myFunction2() {
-      var x = document.getElementById("studie-section");
-      var y = document.getElementById("studie-button2");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-        y.innerHTML = 'Trykk for å lukke studieoppbygging';
-    } else{
-        x.style.display = "none";
-    }
+      const element = document.getElementById("miriam");
+      element.scrollIntoView({behavior:"smooth"});
     }
   </script>
     
