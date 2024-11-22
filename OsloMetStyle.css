@@ -426,6 +426,8 @@ main{
     text-align: center;
     font-size: x-large;
 }
+
+
 /*Subheading in parentcontainer2 and 3 stretches across 1st row*/
 .år2, .år3{
     grid-column: 1 / span 4; 
