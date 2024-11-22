@@ -275,31 +275,31 @@ main{
     margin-top: 20px;
 }
 
-.mahder1, .side-content {
+.side-content-section, .side-content {
     flex: 1;
     padding: 20px;
     color: white;
 }
 
-.mahder1 {
+.side-content-section {
     border-right: 2px solid white;
 }
 
 /*Style for left heading*/
-.mahder1 h1 {
+.side-content-section h1 {
     font-size: 24px;
     margin-bottom: 15px;
     color: white;
 }
 
 /*Style for left paragraph*/
-.mahder1 p {
+.side-content-section p {
     color:white;
     margin-bottom: 20px;
 }
 
 /*Style for list/points*/
-.mahder1 ul { 
+.side-content-section ul { 
     list-style-type: disc;
     padding-left: 20px;
     color: white;
