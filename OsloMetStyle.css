@@ -57,7 +57,6 @@ main{
 .navbar a {
     color: rgb(0, 0, 0);
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
     margin: auto;
     padding: 5px 10px;
@@ -66,12 +65,12 @@ main{
 /* Hover effect for navigation bar links */
   .navbar a:hover {
     background-color: rgb(211, 238, 255);
+    padding: 10px;
     border-radius: 5px;
-    text-decoration: underline;
 }
 
 /* Editing the search and menu bar */
-/*.nav-right {
+.nav-right {
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -97,7 +96,7 @@ main{
 .menu-btn:hover{
     cursor: pointer;
 }
-*/
+
 
   /*Style to get rid of the shadow behind the picture*/
   .logo {
@@ -412,13 +411,18 @@ main{
 
 /*Studieoppbygging*/
 /*Section for studystructure-table*/
-#studieoppbygging-main, #studie-section{
+#studieoppbygging-main{
     display: flex;
     flex-direction: column;
     max-width: 100%;
 }
+#studieoppbygging-main h1{
+    font-size: xx-large;
+    align-self: center;
+
+}
 /*Subheading in parentcontainers*/
-.studieår, h1{
+.studieår{
     text-align: center;
     font-size: x-large;
 }
@@ -447,7 +451,7 @@ main{
 .studie-button:hover{
     width: 280px;
     height: 100px;
-    font-size: medium;
+    font-size: large;
     background-color:rgb(211, 238, 255);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     cursor: pointer;
