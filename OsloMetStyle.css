@@ -816,6 +816,7 @@ main{
 
   /* Posistions the containers beside each other, and style for container*/
 .footer-container {
+    font-size: large;
     position: relative;
     display: flex;
     flex-direction: row;
