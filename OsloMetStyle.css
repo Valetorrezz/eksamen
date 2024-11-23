@@ -54,7 +54,6 @@ main{
     padding: 5px;
     background-color: #98d8ff;
     display: flex;
-    align-items: center;
 }
 
 /* Styles for navigation bar links */
