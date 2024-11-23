@@ -789,81 +789,82 @@ main{
 
   /*Footer for home-page*/
   /*Style for footer background container*/
-  .footer {
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #c1e7ff;
     padding: 20px;
     font-family: Arial, sans-serif;
     text-align: center;
+
+    
+}
+.footer a{
+    color: black;
+}
+.footer-button a{
+    text-decoration: none;
 }
 
 /* Add some space below the centered content */
-.center-first-contet{
-    margin-bottom: 20px; 
-  }
+.center-first-content{
+    margin-bottom: 20px;
+}
 
-  /* Posistions the texts beside each other, and style for container*/
-  *.footer-container {
+  /* Posistions the containers beside each other, and style for container*/
+.footer-container {
+    position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center; 
-    margin: 0 auto; 
-  }
-      
-      .m-footer-links {
-        list-style: none; 
-        padding: 0;
-        margin: 20px 0; 
-        display: flex;
-        flex-direction: column; 
-        gap: 10px; 
-      }
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
 
-      /*Space between text*/
-      .m-footer-link {
-        margin-bottom: 5px;
-      }
+.footer-contactinfo address{
+    margin-bottom: 20px ;
+}
       
-      /*Style for links*/
-      .a-link-black {
-        text-decoration: none;
-        color: black;
-      }
-      
-      .a-link-black:hover {
-        text-decoration: underline;
-      }
-      
-      .m-footer-social-link {
-        color: black;
-        text-decoration: none;
-      }
-      
-      
-      .m-footer-social-link:hover {
-        text-decoration: underline;
-      }
+.m-footer-links {
+    list-style: none; 
+    padding: 5px 0;
+}
 
-      /*"Media Queries: Adjust layout for larger screens, aligning content in a row and ensuring proper spacing." Source: Co-Pilot*/
-      @media (min-width: 600px) {
-        .footer-container {
-          flex-direction: row;
-          justify-content: space-between; /* Space between items in row direction */
-        }
-      
-        .footer-p, .m-footer-links, .footer-social {
-          width: 30%; /* Equal width for each section */
-        }
-      
-        .footer-social {
-          flex-direction: row; /* Align social links in a row */
-        }
-      }
+/*Space between text*/
+.m-footer-link {
+    margin-bottom: 10px;
+}
 
+/*Style for links*/
+.a-link-black {
+    text-decoration: none;
+    color: black;
+}
+      
+.a-link-black:hover {
+    text-decoration: underline;
+}
+.footer-social{
+    padding: 0 30px;
+}  
+.m-footer-social-link {
+    color: black;
+    text-decoration: none;
+    margin: 0;
+}
+
+      
+.m-footer-social-link:hover {
+    text-decoration: underline;
+}
 
       
 
 /*Style for button*/
-  .footer-button, .home-scroll-top { /*Button class*/
+.footer-button, .home-scroll-top { /*Button class*/
     padding: 10px 20px; /* Padding around the button text */
     font-size: 16px; /* Font size of the button text */
     color: rgb(0, 0, 0); 
