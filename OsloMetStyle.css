@@ -42,10 +42,10 @@ main{
 /* Styles for the navigation bar list */
 .navbar {
     display: flex;
-    justify-content: space-between;
     padding: 0 20px;
     background-color: #98d8ff;
     justify-content: start;
+    align-items: center;
 }
 .navbar ul {
     list-style-type: none;
@@ -59,9 +59,7 @@ main{
 /* Styles for navigation bar links */
 .navbar a {
     color: rgb(0, 0, 0);
-    text-align: center;
     text-decoration: none;
-    margin: auto;
     padding: 5px 10px;
 }
 
@@ -89,6 +87,7 @@ main{
     border: 2px solid rgb(197, 196, 196); 
     border-radius: 10px; 
 }
+
 
 .menu-btn {
     background-color: transparent;
