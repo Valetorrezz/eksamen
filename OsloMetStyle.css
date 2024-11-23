@@ -43,11 +43,11 @@ main{
 /* Styles for the navigation bar list */
 .navbar {
     display: flex;
-    padding: 0 20px;
+    padding: 20px;
     background-color: #98d8ff;
     justify-content: start;
     align-items: center;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
 }
 
 /* Styles for navigation bar links */
@@ -63,6 +63,16 @@ main{
     padding: 10px;
     border-radius: 5px;
 }
+
+.header-content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #83cdfc;
+
+}
+
 .nav-left{
     display: flex;
     flex-direction: row;
