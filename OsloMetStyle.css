@@ -816,7 +816,6 @@ main{
 
   /* Posistions the containers beside each other, and style for container*/
 .footer-container {
-    font-size: large;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -836,8 +835,10 @@ main{
 }
 
 /*Space between text*/
-.m-footer-link {
-    margin-bottom: 10px;
+.m-footer-link a{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: block;
 }
 
 /*Style for links*/
@@ -861,6 +862,7 @@ main{
       
 .m-footer-social-link:hover {
     text-decoration: underline;
+    
 }
 
       
