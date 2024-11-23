@@ -72,7 +72,7 @@ main{
 }
 
 /* Editing the search and menu bar */
-.nav-right {
+/*.nav-right {
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -97,7 +97,7 @@ main{
 }
 .menu-btn:hover{
     cursor: pointer;
-}
+}*/
 
 
   /*Style to get rid of the shadow behind the picture*/
@@ -180,7 +180,7 @@ main{
 .text-container { 
    text-align: center;
    margin: 20px;
-   
+
 } 
 
 /* "Opptakskrav og poeng, slik søker du"*/
