@@ -377,16 +377,16 @@ main{
     justify-content: center; 
     gap: 80px; //* Adjusts space between image and text */
 }
-@media (max-width: 760px) {
+/*When screen reaches this width, content switches to column display*/
+@media (max-width: 1000px) {
     .content-wrapper {
         flex-direction: column;
     }
 }
 
 /*Positions image*/
-.image-spå img { 
-    width: auto;
-    height: auto;
+.image-spå img {
+    margin-top: 20px;
 }
 
 /*Style for button*/
