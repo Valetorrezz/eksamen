@@ -47,6 +47,7 @@ main{
     background-color: #98d8ff;
     justify-content: start;
     align-items: center;
+    flex-wrap: wrap;
 }
 .navbar ul {
     list-style-type: none;
