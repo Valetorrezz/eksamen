@@ -198,6 +198,9 @@ main{
     flex: 1;
     padding: 20px;
 }
+.right-side li{
+    padding: 5px;
+}
 
 .left-side{
     border-right: 2px solid black;
