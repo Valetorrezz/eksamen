@@ -10,9 +10,7 @@ body{
 h1{
     font-size: 2em;
 }
-a{
-    margin: 10px;
-}
+
 
 /*Main Container: Adds margin around main content, centers it in a column*/
 main{
@@ -194,9 +192,6 @@ main{
     padding: 20px;
     border-radius: 2%;
 }
-.first-wrapper a{
-    margin: 2px;
-}
 
 .left-side, .right-side{
     flex: 1;
@@ -332,9 +327,6 @@ main{
     border-radius: 20px;
     margin-top: 40px;
     
-}
-.secondbox a{
-    margin: 0;
 }
 
 @media (max-width: 760px) {
@@ -642,10 +634,7 @@ main{
     flex-direction: column;
     gap: 15px;
 }
-.field-list a{
-    margin: 0;
-}
-  
+
   .field {
       padding: 15px;
       border: 1px solid #ddd;
