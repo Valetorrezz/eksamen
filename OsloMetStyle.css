@@ -175,6 +175,7 @@ main{
     padding-bottom: 5em;
     background-color: #c1e7ff; 
 }
+
 /*Style for alignin the text and pictures beside each other*/
 .content-wrapper { 
     display: flex; 
@@ -392,11 +393,16 @@ main{
     justify-content: center; 
     gap: 80px; //* Adjusts space between image and text */
 }
+@media (max-width: 760px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+}
 
 /*Positions image*/
 .image-spå img { 
-    display: flex; 
-    left: 70px;
+    width: auto;
+    height: auto;
 }
 
 /*Style for button*/
@@ -720,7 +726,7 @@ main{
     text-decoration: underline;
 }
 
-/*Ari's part: Style for "Spørsmål om utdanningen?" section*/
+/*Style for "Spørsmål om utdanningen?" section*/
 /*Style for background conatiner*/
 .section-FAQ-kursleder {
     text-align: center;
