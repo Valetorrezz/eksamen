@@ -66,10 +66,19 @@ main{
 }
 
 /* Hover effect for navigation bar links */
-  .navbar a:hover {
+.navbar a:hover {
     background-color: rgb(211, 238, 255);
     padding: 10px;
     border-radius: 5px;
+}
+/* Editing the search and menu bar */
+.nav-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding: 0;    
+    justify-content: right;
+    overflow: hidden;
 }
 /* Styles for the gray search bar */
 .search-bar {
@@ -79,16 +88,7 @@ main{
     background-color: #ffffff; 
     border: 2px solid rgb(197, 196, 196); 
     border-radius: 10px; 
-}
-
-/* Editing the search and menu bar */
-.nav-right {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    padding: 0;    
-    justify-content: right;
-    overflow: auto;
+    aspect-ratio: 20/2;
 }
 
 .menu-btn {
