@@ -44,10 +44,9 @@ main{
 .navbar {
     display: flex;
     padding: 20px;
-    background-color: #98d8ff;
+    background-color: #9dd9ff;
     justify-content: start;
     align-items: center;
-    /*flex-wrap: wrap;*/
 }
 
 /* Styles for navigation bar links */
@@ -55,6 +54,7 @@ main{
     color: rgb(0, 0, 0);
     text-decoration: none;
     padding: 5px 10px;
+    font-size: large
 }
 
 /* Hover effect for navigation bar links */
@@ -69,26 +69,10 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #83cdfc;
+    background-color: #c1e7ff;
 
 }
 
-.nav-left{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-/* Editing the search and menu bar */
-.nav-right, .nav-left{
-    padding: 0;
-    margin: 0;
-}
-.nav-right {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    padding: 5px 0;    
-}
 /* Styles for the gray search bar */
 .search-bar {
     padding: 10px 20px; 
@@ -111,7 +95,7 @@ main{
 
 
   /*Style to get rid of the shadow behind the picture*/
-  .logo {
+.logo {
     box-shadow: none;
 }
 
@@ -996,17 +980,20 @@ repository.*/
 }
 
 /*navigation bar,"nav-A" because it has a different color than the main navbar*/
-.nav-A ul{ 
-    list-style-type: none;
-    margin: 0;
-    padding: 13px;
+.nav-A{
     background-color: #699874;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+}
+.nav-A ul{ 
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 13px;
 }
 
 .nav-A a {
-    display: block;
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 14px 16px;
