@@ -12,6 +12,7 @@ h1{
 }
 
 
+
 /*Main Container: Adds margin around main content, centers it in a column*/
 main{
     margin: 20px;
@@ -434,6 +435,7 @@ main{
     grid-row: 1;       
 }
 
+
 /*Styling the buttons in studieoppbygging-section and studie-section*/
 .studie-button{
     align-self: center;
@@ -805,13 +807,10 @@ main{
 .footer a{
     color: black;
 }
-.footer-button a{
-    text-decoration: none;
-}
+
 
 /* Add some space below the centered content */
 .center-first-content{
-    margin-bottom: 20px;
 }
 
   /* Posistions the containers beside each other, and style for container*/
@@ -870,14 +869,21 @@ main{
 /*Style for button*/
 .footer-button, .home-scroll-top { /*Button class*/
     padding: 10px 20px; /* Padding around the button text */
-    font-size: 16px; /* Font size of the button text */
+    font-size: 20px; /* Font size of the button text */
     color: rgb(0, 0, 0); 
     background-color: #608ba3; 
-    border: none; 
+    border: 3px solid #304652;
     border-radius: 10px; 
     cursor: pointer; /* Changes cursor to a hand when hovering over the button */
 }
   
+.footer-button{
+    height: 100px;
+    width: 250px;
+}
+.footer-button a{
+    text-decoration: none;
+}
 /*end for home-page footer*/
 
   
@@ -913,16 +919,6 @@ compliance may appear even if the automated test gives an All clear-verdict*/
     max-width: auto;
     margin: 0;
 }
-.footer-button { /*Button class*/
-    padding: 10px 20px; /* Padding around the button text */
-    font-size: 16px; /* Font size of the button text */
-    color: rgb(0, 0, 0); 
-    background-color: #608ba3; 
-    border: none; 
-    border-radius: 10px; 
-    cursor: pointer; /* Changes cursor to a hand when hovering over the button */
-}
-
 
 
 
@@ -978,15 +974,6 @@ repository.*/
     padding: 20px 0; 
     max-width: auto;
     margin: 0;
-}
-.footer-button { /*Button class*/
-    padding: 10px 20px; /* Padding around the button text */
-    font-size: 16px; /* Font size of the button text */
-    color: rgb(0, 0, 0); 
-    background-color: #608ba3; 
-    border: none; 
-    border-radius: 10px; 
-    cursor: pointer; /* Changes cursor to a hand when hovering over the button */
 }
 
 
