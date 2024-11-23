@@ -13,6 +13,7 @@
     <!--Navigationbar-->
     <nav class="navbar">
       <ul class="nav-left">
+        <!-- Bilde hentet fra https://kommunikasjon.ntb.no/presserom/15678779/oslomet/mi?item=logo-16984812 -->
         <img class="logo" src=https://kommunikasjon.ntb.no/data/images/00339/dcb25c97-e530-4d45-804e-4883a9a9ce9d.png alt="OsloMet logo med navn i svart skrift" width="100" height="70">
         <li><a href="index.html">Home</a></li>
         <li><a href="Accessibility.html">Accessibility</a></li>
@@ -614,6 +615,7 @@
 </section>
   </footer>
   <script>
+    /*Changes style.display to "block" (if it's currently "none"), and the text in inner HTML when function is invoked*/
     function studieÅpneLukk() {
       var x = document.getElementById("studie-section");
       var y = document.getElementById("studie-button1");
@@ -621,12 +623,15 @@
         x.style.display = "block";
         y.innerHTML = 'Trykk for å lukke studieoppbygging';
 
-    } else {
+    } 
+    /*Changes style.display to "none" (if it's currently "block", and inner HTML*/
+    else {
         x.style.display = "none";
         y.innerHTML = 'Trykk for å åpne studieoppbygging';
     }
 
     }
+    /*Scrolls to id-element, with scroll-behavior set to smooth*/
     function studieScrollTilTopp() {
       const element = document.getElementById("studieoppbygging-section");
       element.scrollIntoView({behavior:"smooth"});
