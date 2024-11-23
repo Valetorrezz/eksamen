@@ -176,28 +176,14 @@ main{
     background-color: #c1e7ff; 
 }
 
-
-/*Style for alignin the text and pictures beside each other*/
-.content-wrapper { 
-    display: flex; 
-    align-items: flex-start; 
-    justify-content: center; 
-    gap: 20px; /* Adjusts space between image and text */
-}
-/*Style for image*/
-.image-logo img { 
-    position: relative; 
-    left: 20px;
-    box-shadow: none;
-}
-
 /*Style for text*/
 .text-container { 
-    text-align: left; /* Left-aligns text */
-    max-width: 50%; /* Adjust width as needed */
+   text-align: center;
+   margin: 20px;
+   
 } 
 
-/* "opptakskrav og poeng, slik søker du"*/
+/* "Opptakskrav og poeng, slik søker du"*/
 .first-wrapper{
     display:flex;
     max-width: 1200px;
@@ -230,7 +216,6 @@ main{
     list-style-type: disc;
     padding-left: 35px;
 }
-
 
 
 
