@@ -893,6 +893,7 @@ compliance may appear even if the automated test gives an All clear-verdict*/
 
 .accessibility-info{
     background-color: #d4eeff;/*Bytter bakgrunnsfarge senere til lik index*/
+    border: 5px solid #7ec9ff;
     padding: 20px;
 }
 
@@ -925,6 +926,7 @@ repository.*/
 .github-container {
     background-color: #d4eeff;
     padding: 20px;
+    border: 5px solid #7ec9ff;
 }
 .github-main h1{
     text-align: center;
