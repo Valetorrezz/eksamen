@@ -71,24 +71,24 @@ main{
     padding: 10px;
     border-radius: 5px;
 }
+/* Styles for the gray search bar */
+.search-bar {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    color: rgb(179, 177, 177); 
+    background-color: #ffffff; 
+    border: 2px solid rgb(197, 196, 196); 
+    border-radius: 10px; 
+}
 
 /* Editing the search and menu bar */
-/*.nav-right {
+.nav-right {
     display: flex;
     align-items: center;
     margin-left: auto;
     padding: 0;    
     justify-content: right;
-}
-
-.search-bar {
-    padding: 5px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-.search-bar:hover{
-    cursor: text;
+    overflow: auto;
 }
 
 .menu-btn {
@@ -98,7 +98,7 @@ main{
 }
 .menu-btn:hover{
     cursor: pointer;
-}*/
+}
 
 
   /*Style to get rid of the shadow behind the picture*/
@@ -1055,27 +1055,7 @@ repository.*/
     margin-bottom: 20px;
 }
 
-/* Styles for the gray search bar */
-.search-bar {
-    padding: 10px 20px; 
-    font-size: 16px; 
-    color: rgb(179, 177, 177); 
-    background-color: #ffffff; 
-    border: 2px solid rgb(197, 196, 196); 
-    border-radius: 10px; 
-    cursor: pointer; 
-}
 
-/* Styles for search button */
-.search {
-    padding: 10px 20px; 
-    font-size: 16px; 
-    color: rgb(0, 0, 0); 
-    background-color: #daf0e6; 
-    border: 2px solid rgb(168, 196, 173); 
-    border-radius: 10px; 
-    cursor: pointer; 
-}
 
 /*Style for the second conatainer, headline section */
 .headline2-A {
