@@ -10,7 +10,9 @@ body{
 h1{
     font-size: 2em;
 }
-
+a{
+    margin: 10px;
+}
 
 /*Main Container: Adds margin around main content, centers it in a column*/
 main{
@@ -192,6 +194,9 @@ main{
     padding: 20px;
     border-radius: 2%;
 }
+.first-wrapper a{
+    margin: 2px;
+}
 
 .left-side, .right-side{
     flex: 1;
@@ -328,6 +333,10 @@ main{
     margin-top: 40px;
     
 }
+.secondbox a{
+    margin: 0;
+}
+
 @media (max-width: 760px) {
     .jobandopportunities {
         flex-direction: column;
@@ -622,17 +631,20 @@ main{
     border-radius: 8px;
   }
   
-  .field-container h2 {
+.field-container h2 {
     font-size: 1.5em;
     margin-bottom: 20px;
     color: #333;
-  }
+}
   
-  .field-list {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-  }
+.field-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.field-list a{
+    margin: 0;
+}
   
   .field {
       padding: 15px;
