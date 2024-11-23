@@ -488,6 +488,7 @@ main{
     font-size: large;
     font-weight: bold;
     margin-right: 5px;
+    text-align: start;
 }
 /*Styling of classes subheading*/
 .emnegruppe{
