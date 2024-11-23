@@ -63,6 +63,11 @@ main{
     padding: 10px;
     border-radius: 5px;
 }
+.nav-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 /* Editing the search and menu bar */
 .nav-right, .nav-left{
     padding: 0;
@@ -801,11 +806,6 @@ main{
 }
 .footer a{
     color: black;
-}
-
-
-/* Add some space below the centered content */
-.center-first-content{
 }
 
   /* Posistions the containers beside each other, and style for container*/
